@@ -1,7 +1,6 @@
 import { Box, Text, Button, Flex, flexbox } from "@chakra-ui/react";
 import Image from "next/image";
 
-import { Dancing_Script } from "next/font/google";
 import jeweImg from "../../public/images/home-img/Jewe2.png";
 import textureImg from "../../public/images/home-img/texture-3.png";
 import texture5slImg from "../../public/images/home-img/texture-5sl.png";
@@ -9,6 +8,7 @@ import girlImg from "../../public/images/home-img/persionsliderhome4.png";
 import pattern8Img from "../../public/images/home-img/partten-8.png";
 import texture6Img from "../../public/images/home-img/texture-6.png";
 
+import { Dancing_Script } from "next/font/google";
 const DancingScript = Dancing_Script({
   subsets: ["latin"],
   fontWeight: "900",
