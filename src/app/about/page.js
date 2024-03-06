@@ -421,8 +421,6 @@ const About = () => {
 
       <FooterSLider/>
 
-      <Footer/>
-
     </Container>
   </div>;
 };
