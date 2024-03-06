@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 // Import necessary components and icons from Chakra UI
 import { Dancing_Script } from "next/font/google";
 import { FaShoppingBag } from "react-icons/fa";
@@ -35,8 +35,10 @@ import {
   SearchIcon,
 } from "@chakra-ui/icons";
 
+import { ModalController } from "./ModalController";
 import logo from "../../public/images/header-img/Ethereal Elegance.png";
 import cartBag from "../../public/images/header-img/bag-2.png";
+import LoginModal from "./LoginModal";
 
 // Navigation links
 const links = [
@@ -50,6 +52,16 @@ const links = [
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   // const bg = useColorModeValue("gray.100", "gray.900");
+
+  const [isCustomLoginModalOpen, setCustomLoginModalOpen] = useState(false);
+
+  const openCustomLoginModal = () => {
+    setCustomLoginModalOpen(true);
+  };
+
+  const closeCustomLoginModal = () => {
+    setCustomLoginModalOpen(false);
+  };
 
   return (
     <Box px={{ base: 0, md: 10 }} bg={"white"}>
@@ -88,7 +100,16 @@ const Navbar = () => {
             display={{ base: "flex", md: "flex" }}
             gap={{ base: 2, md: 1 }}
           >
-            <Button bg={"transparent"}>Login</Button>
+            <Button bg={"transparent"} onClick={openCustomLoginModal}>
+              Login
+            </Button>
+            {isCustomLoginModalOpen && (
+              <LoginModal
+                customIsOpen={isCustomLoginModalOpen}
+                customOnOpen={openCustomLoginModal}
+                customOnClose={closeCustomLoginModal}
+              />
+            )}
             <IconButton
               icon={<SearchIcon />}
               aria-label="Search"
@@ -115,7 +136,10 @@ const Navbar = () => {
         <DrawerContent bg={"white"} border={"1px solid black"}>
           <DrawerHeader borderBottomWidth="1px">
             <Flex justifyContent="space-between" alignItems="center">
-              <Text fontWeight="bold">Your Logo</Text>
+              <Text fontWeight="bold" className={DancingScript.className}>
+                {" "}
+                Ethereal Elegance
+              </Text>
               <IconButton
                 icon={<CloseIcon />}
                 aria-label="Close Menu"
