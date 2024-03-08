@@ -8,7 +8,7 @@ import { FaInstagram } from "react-icons/fa6";
 const Footer = () => {
   return (
     <Box
-      mt={'20px'}
+      mt={'40px'}
       w={'100%'}
       h={'auto'}
       display={'flex'}

@@ -23,6 +23,7 @@ import image3 from "../../../public/images/about-img/test3.png"
 import image4 from "../../../public/images/about-img/test4.png"
 import FooterSLider from "@/Components/FooterSLider";
 import Footer from "@/Components/Footer";
+import LogosSection from "@/Components/LogosSection";
 
 
 
@@ -372,11 +373,8 @@ const About = () => {
       </Box>
       </Box>
 
-      <Box
-        w={'100%'}
-        h={'auto'}
-      >
-        <Banner/>  
+      <Box>
+        <LogosSection/>  
       </Box>
 
       <Box
