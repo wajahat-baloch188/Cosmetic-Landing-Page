@@ -14,7 +14,6 @@ import glitz from "../../public/images/home-img/glitz.png";
 import partten8 from "../../public/images/home-img/partten-8.png";
 import white_syrup from "../../public/images/home-img/whitening_syrup.png";
 import texture3 from "../../public/images/home-img/texture-3.png";
-import { Dancing_Script } from "next/font/google";
 import Image from "next/image";
 import LogosSection from "@/Components/LogosSection";
 
@@ -23,6 +22,8 @@ import Testimonials from "@/Components/Testimonials";
 import BeautyBlogs from "@/Components/BeautyBlogs";
 import BestProduct from "@/Components/BestProduct";
 
+import { Dancing_Script } from "next/font/google";
+import ExploreMore from "@/Components/ExploreMore";
 const DancingScript = Dancing_Script({
   subsets: ["latin"],
   fontWeight: "900",
@@ -619,49 +620,7 @@ export default function Home() {
       </Flex>
 
       {/* Explore More */}
-      <Flex height={{ base: "20vh", md: "30vh" }} w={"100%"} bg={"#F8F8F8"}>
-        <Box h={"100%"} w={"30%"} pos={"relative"}>
-          <Box pos={"absolute"} bottom={{ base: 0, md: -7 }}>
-            <Text
-              className={DancingScript.className}
-              fontSize={{ base: "10vw", md: "10vw" }}
-              color={"#C75D68"}
-            >
-              Beauty
-            </Text>
-          </Box>
-        </Box>
-        <Box
-          h={"100%"}
-          w={"50%"}
-          display={"flex"}
-          justifyContent={"center"}
-          alignItems={"center"}
-          flexDir={"column"}
-          gap={4}
-        >
-          <Text fontSize={{ base: 12, md: "auto" }} textAlign={"center"}>
-            Dwell on the beauty of life. Watch the stars, and see yourself
-            running with them.
-          </Text>
-          <Text fontSize={{ base: 10, md: "auto" }}>
-            ― Marcus Aurelius, Meditations
-          </Text>
-          <Button
-            border={"2px solid black"}
-            bg={"transparent"}
-            borderRadius={0}
-            fontSize={{ base: 7, md: 10 }}
-          >
-            EXPLORE MORE
-          </Button>
-        </Box>
-        <Box h={"100%"} w={"20%"} pos={"relative"}>
-          <Box pos={"absolute"} bottom={0}>
-            <Image src={texture3} />
-          </Box>
-        </Box>
-      </Flex>
+      <ExploreMore />
 
       {/* Beauty Blog */}
       <BeautyBlogs />
