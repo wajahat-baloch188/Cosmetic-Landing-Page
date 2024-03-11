@@ -34,13 +34,7 @@ const ContactUsComp = () => {
       bg="white"
       position="relative"
     >
-      <Box
-        h="50vh"
-        w="100%"
-        bg="green.300"
-        zIndex={-99}
-        position="absolute"
-      ></Box>
+      <Box h="50vh" w="100%" zIndex={-99} position="absolute"></Box>
       <Box
         h="45vh"
         w={{ base: "95%", md: "80%" }}
@@ -107,7 +101,7 @@ const ContactUsComp = () => {
                 fontStyle="italic"
                 fontWeight="800"
                 textAlign={"center"}
-                fontSize={{ base: "18px", md: "20px" }} // Responsive font size
+                fontSize={{ base: "16px", md: "20px" }} // Responsive font size
               >
                 {elem.title}
               </Text>
@@ -115,7 +109,7 @@ const ContactUsComp = () => {
                 fontFamily="Poppins"
                 color="#8F8F8F"
                 textAlign={"center"}
-                fontSize={{ base: "12px", md: "14px" }} // Responsive font size
+                fontSize={{ base: "11px", md: "14px" }} // Responsive font size
               >
                 {elem.content}
               </Text>
@@ -123,7 +117,7 @@ const ContactUsComp = () => {
                 fontFamily="Poppins"
                 color="#8F8F8F"
                 textAlign={"center"}
-                fontSize={{ base: "12px", md: "14px" }} // Responsive font size
+                fontSize={{ base: "11px", md: "14px" }} // Responsive font size
               >
                 {elem.details}
               </Text>
@@ -150,7 +144,7 @@ const ContactUsComp = () => {
           color="#BFBFBF"
           className={DancingScript.className}
           fontSize={{ base: "5vw", md: "3vw" }}
-          mt={{ base: 2, md: 0 }}
+          mt={{ base: 1, md: 0 }}
         >
           Eletheral Elegance Contact"
         </Text>

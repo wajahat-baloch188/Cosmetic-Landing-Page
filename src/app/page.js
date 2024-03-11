@@ -1,5 +1,5 @@
 "use client";
-import { Box, Button, Card, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Text } from "@chakra-ui/react";
 
 import HeroSection from "@/Components/HeroSection";
 import Rectangle1Img from "../../public/images/home-img/Rectangle1.png";
@@ -10,10 +10,8 @@ import nailPolish from "../../public/images/home-img/nailpolish.png";
 import aboutImg from "../../public/images/home-img/about-img.png";
 import aboutwing from "../../public/images/home-img/aboutwing.png";
 import clinque from "../../public/images/home-img/clinque.png";
-import glitz from "../../public/images/home-img/glitz.png";
 import partten8 from "../../public/images/home-img/partten-8.png";
 import white_syrup from "../../public/images/home-img/whitening_syrup.png";
-import texture3 from "../../public/images/home-img/texture-3.png";
 import Image from "next/image";
 import LogosSection from "@/Components/LogosSection";
 
@@ -181,7 +179,7 @@ export default function Home() {
         >
           {products.map((product, i) => (
             <Box
-              w={{ base: "90%", md: "19%" }}
+              w={{ base: "90%", sm: "45%", md: "30%", lg: "19%" }}
               key={i}
               display={"flex"}
               justifyContent={"center"}
@@ -195,7 +193,7 @@ export default function Home() {
                 },
               }}
             >
-              <Image src={product.img} alt="Green" />
+              <Image src={product.img} alt="Product" />
               <Box
                 display={"flex"}
                 justifyContent={"center"}
@@ -545,7 +543,6 @@ export default function Home() {
       <BestProduct />
 
       {/* Best Product */}
-
       <Flex h={{ base: "100vh", md: "80vh" }} w={"100%"} flexWrap={"wrap"}>
         <Box
           h={{ base: "40vh", md: "80vh" }}
