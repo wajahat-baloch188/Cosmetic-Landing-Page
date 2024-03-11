@@ -6,7 +6,6 @@ import { Box, Text } from "@chakra-ui/react";
 import texture3 from "../../../public/images/home-img/texture-3.png";
 import { Dancing_Script } from "next/font/google";
 import Image from "next/image";
-import FooterSLider from "@/Components/FooterSLider";
 import FooterSlider from "@/Components/FooterSlider";
 
 const DancingScript = Dancing_Script({
