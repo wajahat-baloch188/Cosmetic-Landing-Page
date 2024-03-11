@@ -87,65 +87,63 @@ export default function Home() {
 
       {/* Cards */}
       <Flex
-        height={"auto"}
-        width={"100%"}
+        height={{ base: "auto", md: "30vh" }}
+        width="100%"
         gap={2}
-        flexWrap={{ base: "wrap", md: "no-wrap" }}
+        flexWrap={{ base: "wrap", md: "nowrap" }}
         p={5}
-        justifyContent={"space-between"}
+        justifyContent="space-between"
+        alignItems="center"
       >
-        {cardsData.map((data, index) => (
-          <Box
-            key={index}
-            height="20vh"
-            width={{ base: "100%", md: "24%" }}
-            position="relative"
-            my={2}
-          >
-            {/* Text on top of the image */}
+        {cardsData.map((data, i) => {
+          return (
             <Box
-              position="absolute"
-              top={0}
-              left={0}
-              right={0}
-              bottom={0}
-              display="flex"
-              flexDirection="column"
-              justifyContent="flex-end"
-              alignItems="flex-end"
+              key={i}
+              pos={"relative"}
+              h={{ base: "125px", md: "160px" }} // Adjust height responsively
+              w={{ base: "100%", sm: "48%", md: "300px" }} // Adjust width responsively
+              boxShadow={"md"}
             >
-              <Text
-                alignItems="center"
-                mr={5}
-                className={DancingScript.className}
-                fontSize={{ base: "10vw", md: "2.8vw" }}
-                mb={{ base: 0, md: -2 }}
-                textColor={"#DBAFAF"}
+              <Box h={"100%"} w={"100%"} pos={"absolute"} zIndex={-6}>
+                <Image
+                  src={Rectangle1Img}
+                  objectFit="cover"
+                  style={{ height: "100%", width: "100%" }}
+                />
+              </Box>
+              <Box
+                h={"50%"}
+                w={"50%"}
+                position={"absolute"}
+                right={0}
+                bottom={0}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+                flexDir={"column"}
+                zIndex={9}
               >
-                {data.text1}
-              </Text>
-              <Text
-                bg="red"
-                mr={2}
-                textColor="#383838"
-                fontFamily={"Poppins"}
-                letterSpacing={2}
-                fontSize={"16px"}
-                padding={2}
-                textTransform={"uppercase"}
-                backgroundColor={"white"}
-                mb={{ base: 5, md: 0 }}
-              >
-                {data.text2}
-              </Text>
+                <Text
+                  fontSize={{ base: "md", md: "lg", lg: "xl" }}
+                  textColor="#DBAFAF"
+                  className={DancingScript.className}
+                  fontWeight={"900"}
+                >
+                  {data.text1}
+                </Text>
+                {/* Adjust font size responsively for "Makeup" text */}
+                <Text
+                  fontSize={{ base: "md", md: "lg", lg: "xl" }}
+                  textColor="#383838"
+                  fontFamily="Poppins"
+                  fontWeight={"light"}
+                >
+                  {data.text2}
+                </Text>
+              </Box>
             </Box>
-
-            {/* Image at the back */}
-            <Box>
-              <Image src={Rectangle1Img} objectFit="cover" />
-            </Box>
-          </Box>
-        ))}
+          );
+        })}
       </Flex>
 
       {/* Shop========== */}
@@ -248,22 +246,22 @@ export default function Home() {
       >
         {/* Box 1 */}
         <Box
-          height={{ base: "50vh", md: "100vh" }}
+          mt={{ base: 10, md: 0 }}
+          height={{ base: "80vh", md: "100vh" }}
           width={{ base: "100%", md: "50%" }}
           position="relative"
           display="flex"
           justifyContent="center"
           alignItems="center"
           flexDirection="column"
-          mt={{ base: "20", md: 0 }}
         >
           {/* Child 1 of Box 1 */}
           <Box
-            height={{ base: "25%", md: "35%" }}
-            width="25%"
+            height="35%"
+            width={{ base: "30%", md: "25%" }}
             position="absolute"
-            top={{ base: "12%", md: "10%" }}
-            left={{ base: "23%", md: "26%" }}
+            top={{ base: "15%", md: "10%" }}
+            left={{ base: "28%", md: "26%" }}
             transform="translateX(-50%)"
             zIndex="0"
           >
@@ -276,31 +274,42 @@ export default function Home() {
             />
           </Box>
 
-          {/* Child 2 of Box 1 */}
-          <Box
-            height={{ base: "63.2%", md: "64%" }}
-            width={{ base: "65%", md: "57%" }}
-            border="1px solid #252525"
-            zIndex="2"
-          ></Box>
-
           {/* Child 3 of Box 1 */}
-          <Box position={"absolute"} top={"50%"}>
+          <Box
+            position="absolute"
+            top="50%"
+            left="50%"
+            zIndex={99}
+            transform="translateX(-50%)"
+          >
             <Button zIndex={5} borderRadius={0}>
               Fancy Look
             </Button>
           </Box>
 
+          {/* Child 2 of Box 1 */}
+          <Box
+            height={{ base: "55%", md: "64%" }}
+            width="57%"
+            border="1px solid #252525"
+            zIndex="2"
+          ></Box>
+
           {/* Child 4 of Box 1 */}
           <Box
-            height={{ base: "63.2%", md: "65%" }}
-            width={{ base: "65%", md: "57%" }}
+            height={{ base: "55%", md: "65%" }}
+            width="57%"
             position="absolute"
-            top={{ base: "20%", md: "20%" }}
-            left={{ base: "19%", md: "23.5%" }}
+            top={{ base: "24%", md: "20%" }}
+            left={{ base: "23%", md: "23.5%" }}
             zIndex="1"
           >
-            <Image src={aboutImg} alt="About Image" objectFit="cover" />
+            <Image
+              src={aboutImg}
+              alt="About Image"
+              objectFit="cover"
+              style={{ height: "100%" }}
+            />
           </Box>
         </Box>
 
@@ -507,7 +516,7 @@ export default function Home() {
                   bg={"transparent"}
                   border={"2px solid black"}
                   borderRadius={0}
-                  mt={{ base: "60%", md: "0" }}
+                  mt={{ base: "85%", md: "0" }}
                 >
                   READ MORE
                 </Button>
@@ -522,8 +531,8 @@ export default function Home() {
           </Box>
 
           <Box
-            h={{ base: "35vh", md: "100vh" }}
-            mt={{ base: "18%", md: "-5%" }}
+            h={{ base: "40vh", md: "100vh" }}
+            mt={{ base: "20%", md: "-5%" }}
             w={{ base: "100%", md: "35%" }}
             ml={{ base: "30%", md: 0 }}
           >
@@ -534,9 +543,10 @@ export default function Home() {
 
       {/* Color */}
       <BestProduct />
+
       {/* Best Product */}
 
-      <Flex h={"80vh"} w={"100%"} flexWrap={"wrap"}>
+      <Flex h={{ base: "100vh", md: "80vh" }} w={"100%"} flexWrap={"wrap"}>
         <Box
           h={{ base: "40vh", md: "80vh" }}
           w={{ base: "100%", md: "50%" }}
@@ -557,7 +567,7 @@ export default function Home() {
 
         {/* Box 2 */}
         <Box
-          h={{ base: "40vh", md: "80vh" }}
+          h={{ base: "50vh", md: "80vh" }}
           w={{ base: "100%", md: "50%" }}
           position="relative"
         >
@@ -571,6 +581,7 @@ export default function Home() {
             transform="translate(-50%, -50%)"
             color="#C75D68"
             zIndex="-1"
+            opacity={0.6}
           >
             Serum.
           </Text>
