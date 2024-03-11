@@ -27,6 +27,7 @@ import {
   useColorModeValue,
   Image,
   Button,
+  textDecoration,
 } from "@chakra-ui/react";
 import {
   HamburgerIcon,
@@ -70,9 +71,10 @@ const Navbar = () => {
         <Flex h={16} alignItems="center" justifyContent="space-between">
           {/* Logo */}
           <Center>
-            <Link href="/">
+            <Link href="/" _hover={{ textDecoration: "none" }}>
               <Text
                 className={DancingScript.className}
+                fontWeight={900}
                 style={{ fontSize: "20px" }}
               >
                 Ethereal Elegance

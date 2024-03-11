@@ -18,11 +18,12 @@ import {
   Text,
   UnorderedList,
   Button,
+  border,
 } from "@chakra-ui/react";
 
 import Image from "next/image";
-import liplose from "../../../public/images/products-img/ligloss.png";
-import img2 from "../../../public/images/home-img/blogGrid2.png";
+import liplose from "../../../../public/images/products-img/ligloss.png";
+import img2 from "../../../../public/images/home-img/blogGrid2.png";
 import { React, useState } from "react";
 import Description from "@/Components/Description";
 import CardSlider from "@/Components/CardSlider";
@@ -47,7 +48,7 @@ const ProductDetails = () => {
   };
   return (
     <Box h={"auto"} w={"100%"}>
-      {/* <AboutHeroSec heading={"Product"} text={"True Natural - True Organic"} /> */}
+      <AboutHeroSec heading={"Product"} text={"True Natural - True Organic"} />
 
       {/* Product details */}
       <Box
@@ -66,7 +67,7 @@ const ProductDetails = () => {
           py={5}
         >
           <Box h={"auto"}>
-            <Box h={"350px"} boxShadow={"md"} w={"285px"} m={"0 auto"}>
+            <Box h={"350px"} boxShadow={"sm"} w={"290px"} m={"0 auto"}>
               {largeImage ? (
                 <Image
                   src={largeImage}
@@ -84,7 +85,13 @@ const ProductDetails = () => {
             </Box>
           </Box>
           <Flex w={"287px"} gap={2} m={"0 auto"} flexWrap={"wrap"} mt={2}>
-            <Box h={"100px"} w={"90px"} m={"0 auto"} boxShadow={"md"}>
+            <Box
+              h={"100px"}
+              w={"90px"}
+              m={"0 auto"}
+              boxShadow={"md"}
+              border={"1px solid black"}
+            >
               <Image
                 src={img2}
                 objectFit="cover"
@@ -93,7 +100,13 @@ const ProductDetails = () => {
               />
             </Box>
             {/* Similar click handlers for other thumbnail images */}
-            <Box h={"100px"} w={"90px"} m={"0 auto"} boxShadow={"md"}>
+            <Box
+              h={"100px"}
+              w={"90px"}
+              m={"0 auto"}
+              boxShadow={"md"}
+              border={"1px solid black"}
+            >
               <Image
                 src={liplose}
                 objectFit="cover"
@@ -101,7 +114,13 @@ const ProductDetails = () => {
                 onClick={() => handleImageClick(liplose)} // Set click handler for large version
               />
             </Box>
-            <Box h={"100px"} w={"90px"} m={"0 auto"} boxShadow={"md"}>
+            <Box
+              h={"100px"}
+              w={"90px"}
+              m={"0 auto"}
+              boxShadow={"md"}
+              border={"1px solid black"}
+            >
               <Image
                 src={img2}
                 objectFit="cover"

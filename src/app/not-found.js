@@ -19,7 +19,13 @@ export default function NotFound() {
   };
 
   return (
-    <Box h={{ base: "65vh", md: "90vh" }} w="100%" bg={"#F5F5F5"}>
+    <Box
+      h={{ base: "65vh", md: "90vh" }}
+      w="100%"
+      bg={"#F5F5F5"}
+      overflow={"hidden"}
+      mb={{ base: -7, md: -10 }}
+    >
       <Box h={{ base: "100vh", md: "90vh" }} w={"full"} display={"flex"}>
         {/* Box-1 */}
         <Box
