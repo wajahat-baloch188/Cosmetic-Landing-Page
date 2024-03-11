@@ -107,8 +107,7 @@ const EmailUs = () => {
               type="submit"
               colorScheme="black"
               size="md"
-              py={3}
-              mr={{ base: 0, md: "85%" }}
+              py={4}
               borderRadius={0}
               bg="black"
             >
