@@ -130,3 +130,56 @@ const FooterSlider = () => {
 };
 
 export default FooterSlider;
+
+//   <Box
+//     w={{ base: "90%", md: "19%" }}
+//     maxW={"300px"} // Set a maximum width for responsiveness
+//     h={"400px"}
+//     key={i}
+//     display={"flex"}
+//     flexDir={"column"}
+//     alignItems={"center"}
+//     borderRadius={"10px"}
+//     overflow={"hidden"} // Hide overflow for a cleaner look
+//     transition={"box-shadow 0.3s ease"}
+//     _hover={{
+//       boxShadow: "0 8px 16px rgba(0, 0, 0, 0.2)",
+//     }}
+//     bgColor={"#fff"} // Use bgColor instead of backgroundColor for Chakra UI
+//     boxShadow={"0 2px 4px rgba(0, 0, 0, 0.1)"}
+//     p={4} // Padding for the entire card
+//   >
+//     <Image
+//       src={product.img}
+//       alt={product.title}
+//       width={150}
+//       height={150}
+//       objectFit={"cover"} // Maintain aspect ratio and cover the container
+//       borderRadius={"50%"} // Make the image circular
+//     />
+//     <Box
+//       mt={4} // Margin top for text container
+//       textAlign={"center"}
+//     >
+//       <Text
+//         textTransform={"uppercase"}
+//         fontSize={"lg"} // Set a font size for the title
+//         fontWeight={"bold"} // Make the title bold
+//         textColor={"#C75D68"}
+//       >
+//         {product.title}
+//       </Text>
+//       <Text textTransform={"uppercase"} fontSize={"sm"}>
+//         {product.desc}
+//       </Text>
+//       <Text
+//         fontSize={"lg"}
+//         fontWeight={"bold"}
+//         mt={2}
+//         textColor={"#333"}
+//       >
+//         ${product.price}
+//       </Text>
+//     </Box>
+//   </Box>
+// -------------------

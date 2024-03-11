@@ -17,7 +17,12 @@ const DancingScript = Dancing_Script({
 export default function HeroSection() {
   return (
     <Box>
-      <Box h={{ base: "70vh", md: "90vh" }} w="100%" bg={"#F5F5F5"}>
+      <Box
+        h={{ base: "70vh", md: "90vh" }}
+        w="100%"
+        bg={"#F5F5F5"}
+        overflow={"hidden"}
+      >
         <Box
           // py={{ base: 0, md: 20 }}
           // mt={{ base: 0, md: "-80px" }}
