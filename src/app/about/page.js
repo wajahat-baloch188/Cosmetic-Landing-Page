@@ -29,9 +29,8 @@ import image1 from "../../../public/images/about-img/test1.png";
 import image2 from "../../../public/images/about-img/test2.png";
 import image3 from "../../../public/images/about-img/test3.png";
 import image4 from "../../../public/images/about-img/test4.png";
-import FooterSLider from "@/Components/FooterSLider";
-import Footer from "@/Components/Footer";
 import FooterSlider from "@/Components/FooterSlider";
+import LogosSection from "@/Components/LogosSection";
 
 const About = () => {
   const [testimonial, setTestimonial] = useState([
@@ -375,6 +374,7 @@ const About = () => {
             <Text fontStyle={"italic"} fontSize={{ base: "8px", md: "15px" }}>
               Explore Our Range of Leading Brand Products
             </Text>
+            {/* <LogosSection /> */}
             <Box
               p={{ base: "2", md: "5" }}
               borderLeft={"2px"}

@@ -77,6 +77,8 @@ const products = [
   },
 ];
 export default function Home() {
+
+  
   return (
     <Box h={"100%"}>
       <Box>

@@ -5,6 +5,7 @@ import image4 from "../../public/images/about-img/s4.png";
 import image5 from "../../public/images/about-img/s5.png";
 import image6 from "../../public/images/about-img/s6.png";
 
+// // ======================
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
