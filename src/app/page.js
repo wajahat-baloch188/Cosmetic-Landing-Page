@@ -332,6 +332,7 @@ export default function Home() {
               fontSize={"32px"}
               color={"#BFBFBF"}
               className={DancingScript.className}
+              placeSelf={"start"}
             >
               About us
             </Text>
