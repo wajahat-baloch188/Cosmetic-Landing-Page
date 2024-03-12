@@ -98,6 +98,7 @@ const BestProduct = () => {
           >
             <Image
               src={glitz}
+              alt="img"
               style={{ height: "100%", width: "100%", zIndex: "-2" }}
             />
           </Box>

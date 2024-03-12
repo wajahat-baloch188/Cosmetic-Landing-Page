@@ -23,7 +23,12 @@ const EmailUs = () => {
       py={5}
     >
       <Box h={{ base: "90%", md: "100%" }} w={{ base: "100%", md: "45%" }}>
-        <Image src={emailImg} objectFit="cover" style={{ height: "100%" }} />
+        <Image
+          src={emailImg}
+          objectFit="cover"
+          style={{ height: "100%" }}
+          alt="img"
+        />
       </Box>
       <Flex h="100%" w={{ base: "100%", md: "55%" }} flexDir="column" mt={10}>
         {/* Email information */}
@@ -48,7 +53,7 @@ const EmailUs = () => {
             lineHeight={{ base: "16px", md: "30px" }}
             py={1}
           >
-            Feel free to reach out to us anytime! We're here to assist you with
+            Feel free to reach out to us anytime! Were here to assist you with
             any inquiries or concerns you may have.
           </Text>
         </Flex>

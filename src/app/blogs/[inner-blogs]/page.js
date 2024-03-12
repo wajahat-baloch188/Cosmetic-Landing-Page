@@ -133,7 +133,7 @@ const InnerBlogs = () => {
           {/* main-image section */}
 
           <Box h={"auto"} w={"full"}>
-            <Image src={leftImg} />
+            <Image src={leftImg} alt="img" />
           </Box>
 
           {/* step-section */}
@@ -207,7 +207,7 @@ const InnerBlogs = () => {
           </Text>
           {/* right box image */}
           <Box w={"full"} h={"auto"}>
-            <Image src={RightImg} />
+            <Image src={RightImg} alt="img" />
           </Box>
           {/* Divider */}
           <Box position="relative" padding="10">
@@ -259,6 +259,7 @@ const InnerBlogs = () => {
                     borderColor={"gray"}
                     px={"10px"}
                     fontSize={{ base: "x-small", md: "small" }}
+                    key={ind}
                   >
                     {ele}
                   </Button>
@@ -332,7 +333,7 @@ const InnerBlogs = () => {
                 >
                   sale
                 </Box>
-                <Image width={200} src={sale} />
+                <Image width={200} src={sale} alt="img" />
               </Box>
               <Text width={"full"} textAlign={"center"} color={"pink"}>
                 Liplose

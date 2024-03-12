@@ -46,7 +46,7 @@ export default function HeroSection() {
                   alignItems={"center"}
                   width={{ base: "12vw", md: "3.5vw" }}
                 >
-                  <Image src={jeweImg} />
+                  <Image src={jeweImg} alt="img" />
                 </Box>
               </Box>
               <Box
@@ -57,7 +57,7 @@ export default function HeroSection() {
                 padding={"0 0 20px 25px"}
                 width={{ base: "12vw", md: "3.5vw" }}
               >
-                <Image src={jeweImg} />
+                <Image src={jeweImg} alt="img" />
               </Box>
               <Box
                 w={"42%"}
@@ -66,7 +66,11 @@ export default function HeroSection() {
                 justifyContent={"flex-end"}
                 width={{ base: "40vw", md: "16vw" }}
               >
-                <Image src={texture5slImg} style={{ height: "55%" }} />
+                <Image
+                  src={texture5slImg}
+                  style={{ height: "55%" }}
+                  alt="img"
+                />
               </Box>
             </Box>
             {/* box-1-2 */}
@@ -193,6 +197,7 @@ export default function HeroSection() {
                   <Image
                     zIndex={-1}
                     src={pattern8Img}
+                    alt="img"
                     style={{ height: "148px", width: "242px" }}
                     w={{ base: "600px", md: "242px" }}
                   />
@@ -207,6 +212,7 @@ export default function HeroSection() {
                   <Image
                     src={girlImg}
                     zIndex={999}
+                    alt="img"
                     style={{
                       height: "100%",
                       width: { base: "100%", md: "100%" },
@@ -226,6 +232,7 @@ export default function HeroSection() {
                 <Image
                   src={texture6Img}
                   style={{ height: "80%", width: { base: "70%", md: "80%" } }}
+                  alt="img"
                 />
               </Box>
             </Box>

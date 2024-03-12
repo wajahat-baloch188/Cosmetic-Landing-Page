@@ -131,7 +131,9 @@ const Shop = () => {
             </Text>
             <SelectBox
               shape="round"
-              indicator={<Image src="images/products-img/img_bxsuparrow.svg" />}
+              indicator={
+                <Image src="images/products-img/img_bxsuparrow.svg" alt="img" />
+              }
               name="relevance"
               placeholder="Relevance"
               options={dropDownOptions}
@@ -259,6 +261,7 @@ const Shop = () => {
             src="images/products-img/img_group_223.svg"
             h="17px"
             mt="2px"
+            alt="img"
           />
           <Text size="5xl" color="black.900" mt="51px">
             Tags
@@ -298,6 +301,7 @@ const Shop = () => {
           <Image
             src="images/products-img/img_rectangle_163.png"
             mt="28px"
+            alt="img"
             w={{ md: "94%", base: "100%" }}
             h="431px"
           />
@@ -1293,7 +1297,10 @@ const Shop = () => {
                               variant="fill"
                               colorScheme="gray_200"
                               icon={
-                                <Image src="images/products-img/img_mdi_heart_outline.svg" />
+                                <Image
+                                  src="images/products-img/img_mdi_heart_outline.svg"
+                                  alt="img"
+                                />
                               }
                               aria-label="348:1270-mdiheart_one"
                               w="auto"
@@ -1304,7 +1311,10 @@ const Shop = () => {
                               variant="fill"
                               colorScheme="gray_200"
                               icon={
-                                <Image src="images/products-img/img_material_symbol.svg" />
+                                <Image
+                                  src="images/products-img/img_material_symbol.svg"
+                                  alt="img"
+                                />
                               }
                               aria-label="348:1278-materialsymbol"
                               w="auto"
@@ -1337,6 +1347,7 @@ const Shop = () => {
                     <Image
                       src={product.imageSrc}
                       mb="49px"
+                      alt="img"
                       w={{ md: "43%", base: "100%" }}
                       h="auto"
                     />
@@ -1427,7 +1438,9 @@ const Shop = () => {
               size="md"
               variant="fill"
               colorScheme="blue_gray_100_63"
-              icon={<Image src="images/products-img/img_group_232.svg" />}
+              icon={
+                <Image src="images/products-img/img_group_232.svg" alt="img" />
+              }
               aria-label="348:1415-iconbutton"
               w="46px"
               borderRadius="50%"

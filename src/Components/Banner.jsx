@@ -35,7 +35,7 @@ const Banner = () => {
           mb={{ base: 4, md: 0 }}
           py={{ base: 4, md: 2 }}
         >
-          <Image src={logo1} />
+          <Image src={logo1} alt="img" />
         </Box>
         <Box
           h={{ base: "auto", md: "15vh" }}
@@ -43,7 +43,7 @@ const Banner = () => {
           mb={{ base: 4, md: 0 }}
           py={{ base: 4, md: 2 }}
         >
-          <Image src={logo2} />
+          <Image src={logo2} alt="img" />
         </Box>
         <Box
           h={{ base: "auto", md: "15vh" }}
@@ -51,7 +51,7 @@ const Banner = () => {
           mb={{ base: 4, md: 0 }}
           py={{ base: 4, md: 2 }}
         >
-          <Image src={logo3} />
+          <Image src={logo3} alt="img" />
         </Box>
         <Box
           h={{ base: "auto", md: "15vh" }}
@@ -59,14 +59,14 @@ const Banner = () => {
           mb={{ base: 4, md: 0 }}
           py={{ base: 4, md: 2 }}
         >
-          <Image src={logo4} />
+          <Image src={logo4} alt="img" />
         </Box>
         <Box
           h={{ base: "auto", md: "15vh" }}
           w={{ base: "25%", md: "17%" }}
           py={{ base: 4, md: 2 }}
         >
-          <Image src={logo5} />
+          <Image src={logo5} alt="img" />
         </Box>
       </Box>
 
@@ -82,7 +82,7 @@ const Banner = () => {
         zIndex={-1}
         bg={"gray.200"}
       >
-        <Image src={RectangleLogo} objectFit="cover" />
+        <Image src={RectangleLogo} objectFit="cover" alt="img" />
       </Box>
     </Box>
   );

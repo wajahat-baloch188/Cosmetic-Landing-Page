@@ -78,6 +78,7 @@ const LogosSection = () => {
             >
               <Image
                 src={logo}
+                alt="img"
                 height="100%"
                 objectFit="contain"
                 position="absolute"
@@ -102,7 +103,7 @@ const LogosSection = () => {
         bottom={0}
         zIndex={-1}
       >
-        <Image src={RectangleLogo} objectFit="cover" border="none" />
+        <Image src={RectangleLogo} objectFit="cover" border="none" alt="img" />
       </Box>
     </Box>
   );

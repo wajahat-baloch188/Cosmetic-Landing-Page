@@ -48,7 +48,7 @@ const Testimonials = () => {
             </Text>
           </Flex>
           <Box h={"100%"} w={"15%"}>
-            <Image src={partten8} />
+            <Image src={partten8} alt="img" />
           </Box>
         </Flex>
         {/* Box 2 */}
@@ -70,7 +70,7 @@ const Testimonials = () => {
           position="relative"
         >
           <Box w="100%" h="100%">
-            <Image src={surfacePinkImg} objectFit="cover" />
+            <Image src={surfacePinkImg} objectFit="cover" alt="img" />
           </Box>
           <Box
             position="absolute"
@@ -98,15 +98,15 @@ const Testimonials = () => {
                     fontSize={12}
                     my={2}
                   >
-                    I'm absolutely in love with EtherealElegance's skincare
-                    products! They've completely transformed my skin, leaving it
-                    radiant and glowing. Couldn't recommend them enough!
+                    I am absolutely in love with EtherealElegances skincare
+                    products! They have completely transformed my skin leaving
+                    it radiant and glowing. Could not recommend them enough!
                   </Text>
                   <Heading fontSize={20}>- Sarah M</Heading>
                 </Box>
               </Box>
               <Box position={"absolute"}>
-                <Image src={message} />
+                <Image src={message} alt="img" />
               </Box>
             </Box>
           </Box>

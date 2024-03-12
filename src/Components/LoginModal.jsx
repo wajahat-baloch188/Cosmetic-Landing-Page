@@ -37,7 +37,7 @@ function LoginModal({ customIsOpen, customOnOpen, customOnClose }) {
       >
         <ModalCloseButton zIndex={"10"} />
         <Box position={"absolute"}>
-          <Image width={"200"} src={texture} />
+          <Image width={"200"} src={texture} alt="img" />
         </Box>
         <Box h={"full"} display={"flex"}>
           <Box
@@ -124,10 +124,10 @@ function LoginModal({ customIsOpen, customOnOpen, customOnClose }) {
             position={"relative"}
           >
             <Box position={"absolute"} right={"0"}>
-              <Image src={lipistic} />
+              <Image src={lipistic} alt="img" />
             </Box>
             <Box position={"absolute"} left={"0"} top={"16"}>
-              <Image src={leaf} />
+              <Image src={leaf} alt="img" />
             </Box>
             <Box zIndex={"2"} position={"absolute"} right={"6"} bottom={"80"}>
               {/* <Image src={jewe} /> */}
@@ -136,7 +136,7 @@ function LoginModal({ customIsOpen, customOnOpen, customOnClose }) {
               {/* <Image width={"30"} src={jewe} /> */}
             </Box>
             <Box position={"absolute"} right={"10"} bottom={"0"}>
-              <Image width={"450"} src={girl} />
+              <Image width={"450"} src={girl} alt="img" />
             </Box>
           </Box>
         </Box>

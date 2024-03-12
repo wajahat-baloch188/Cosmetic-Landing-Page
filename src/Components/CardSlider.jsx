@@ -142,7 +142,12 @@ const CardSlider = () => {
                     objectFit={"cover"}
                     boxShadow={"sm"}
                   >
-                    <Image src={product.img} height="100%" objectFit="cover" />
+                    <Image
+                      src={product.img}
+                      height="100%"
+                      objectFit="cover"
+                      alt="img"
+                    />
                   </Box>
                   <Stack mt="6" spacing="3">
                     <Text

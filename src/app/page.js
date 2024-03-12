@@ -77,8 +77,6 @@ const products = [
   },
 ];
 export default function Home() {
-
-  
   return (
     <Box h={"100%"}>
       <Box>
@@ -109,6 +107,7 @@ export default function Home() {
                   src={Rectangle1Img}
                   objectFit="cover"
                   style={{ height: "100%", width: "100%" }}
+                  alt="img"
                 />
               </Box>
               <Box
@@ -164,7 +163,7 @@ export default function Home() {
             py={2}
             textAlign={"center"}
           >
-            Froms Editor's Pick Collection
+            Froms Editors Pick Collection
           </Text>
           <Box
             w={{ base: "30%", md: "10%" }}
@@ -360,11 +359,11 @@ export default function Home() {
                 lineHeight={6}
                 fontSize={"12px"}
               >
-                We understand that beauty is more than just skin deep; it's
-                about embracing your individuality and expressing your personal
-                style with effortless elegance. That's why we offer premium
-                offerings that cater to modern sophistication, ensuring you feel
-                empowered and beautiful in every moment.
+                We understand that beauty is more than just skin deep; its about
+                embracing your individuality and expressing your personal style
+                with effortless elegance. Thats why we offer premium offerings
+                that cater to modern sophistication, ensuring you feel empowered
+                and beautiful in every moment.
               </Text>
             </Box>
 
@@ -465,12 +464,14 @@ export default function Home() {
               <Box mt={4}>
                 <Image
                   src={jeweImg}
+                  alt="img"
                   style={{ height: "34px", width: "34px" }}
                 />
               </Box>
               <Box mt={10}>
                 <Image
                   src={jeweImg}
+                  alt="img"
                   style={{ height: "20px", width: "20px" }}
                 />
               </Box>
@@ -500,7 +501,7 @@ export default function Home() {
                 >
                   Unleash the power of radiant skin with our potent formula
                   enriched with nourishing ingredients. Say goodbye to dullness
-                  and hello to a luminous glow. Don't miss out, shop now and
+                  and hello to a luminous glow. Dont miss out, shop now and
                   reveal your best skin yet!
                 </Text>
               </Box>
@@ -525,6 +526,7 @@ export default function Home() {
               <Box mt={{ base: "35%", md: 5 }}>
                 <Image
                   src={jeweImg}
+                  alt="img"
                   style={{ height: "20px", width: "20px" }}
                 />
               </Box>
@@ -537,7 +539,11 @@ export default function Home() {
             w={{ base: "100%", md: "35%" }}
             ml={{ base: "30%", md: 0 }}
           >
-            <Image src={clinque} style={{ height: "90%", width: "100%" }} />
+            <Image
+              src={clinque}
+              style={{ height: "90%", width: "100%" }}
+              alt="img"
+            />
           </Box>
         </Flex>
       </Box>
@@ -558,7 +564,7 @@ export default function Home() {
             w={{ base: "30%", md: "35%" }}
             ml={{ base: "-5", md: "-5" }}
           >
-            <Image src={partten8} />
+            <Image src={partten8} alt="img" />
           </Box>
           <Box h={"100%"} w={{ base: "70%", md: "65%" }}>
             <Image src={white_syrup} alt="syrup" />
