@@ -10,6 +10,10 @@ import {
   ListItem,
   List,
   Checkbox,
+  Input,
+  ListItem,
+  List,
+  Checkbox,
   Box,
 } from "@chakra-ui/react";
 import Image from "next/image";
