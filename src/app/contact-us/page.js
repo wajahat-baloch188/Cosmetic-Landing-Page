@@ -1,3 +1,4 @@
+"use client";
 import AboutHeroSec from "@/Components/AboutHeroSec";
 import { Box, Text } from "@chakra-ui/react";
 import React from "react";
@@ -7,7 +8,6 @@ import EmailUs from "@/Components/EmailUs";
 import texture3 from "../../../public/images/home-img/texture-3.png";
 import { Dancing_Script } from "next/font/google";
 import Image from "next/image";
-import FooterSLider from "@/Components/FooterSLider";
 import OurGallery from "@/Components/OurGallery";
 import FooterSlider from "@/Components/FooterSlider";
 
@@ -38,7 +38,6 @@ const ContactUs = () => {
       <OurGallery />
 
       {/* slider */}
-      {/* <FooterSLider /> */}
       <FooterSlider />
     </Box>
   );

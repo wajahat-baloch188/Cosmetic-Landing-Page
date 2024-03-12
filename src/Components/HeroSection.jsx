@@ -17,16 +17,17 @@ const DancingScript = Dancing_Script({
 export default function HeroSection() {
   return (
     <Box>
-      <Box h={{ base: "70vh", md: "90vh" }} w="100%" bg={"#F5F5F5"}>
+      <Box
+        h={{ base: "70vh", md: "90vh" }}
+        w="100%"
+        bg={"#F5F5F5"}
+        overflow={"hidden"}
+      >
         <Box
-          // py={{ base: 0, md: 20 }}
-          // mt={{ base: 0, md: "-80px" }}
           px={{ base: 0, md: 5 }}
-          // pos="absolute"
           h={{ base: "100vh", md: "100vh" }}
           w={"full"}
           display={"flex"}
-          // bg={"yellow"}
         >
           {/* Box-1 */}
           <Box
@@ -132,6 +133,7 @@ export default function HeroSection() {
                     fontSize={"14px"}
                     borderRadius={"none"}
                     lineHeight={"30px"}
+                    _hover={{ bg: "transparent", color: "black" }}
                   >
                     Explore More
                   </Button>

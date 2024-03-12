@@ -1,59 +1,9 @@
 "use client";
-// "use client";
-// import React from "react";
-// import Slider from "react-slick";
-// import "slick-carousel/slick/slick.css"; // Import CSS for proper styling
-// import "slick-carousel/slick/slick-theme.css"; // Import theme for customization (optional)
-// import { Box, Flex } from "@chakra-ui/react";
-// import image1 from "../../public/images/about-img/s1.png";
 import image2 from "../../public/images/about-img/s2.png";
 import image3 from "../../public/images/about-img/s3.png";
 import image4 from "../../public/images/about-img/s4.png";
 import image5 from "../../public/images/about-img/s5.png";
 import image6 from "../../public/images/about-img/s6.png";
-// import Image from "next/image"; // Assuming you're using Next.js for image optimization
-
-// const FooterSlider = () => {
-//   const settings = {
-//     dots: true,
-//     infinite: true,
-//     slidesToShow: 8,
-//     slidesToScroll: 1,
-//     autoplay: true,
-//     speed: 5000,
-//     cssEase: "linear",
-//   };
-
-//   const images = [
-//     image5,
-//     image4,
-//     image3,
-//     image4,
-//     image2,
-//     image3,
-//     image6,
-//     image2,
-//     image4,
-//     image2,
-//     image3,
-//     image4,
-//   ];
-//   return (
-//     <Box className="slider-container" border={"1px solid black"} mb={20}>
-//       <Slider {...settings}>
-//         {images.map((elem, i) => {
-//           return (
-//             <Flex width={300} height={200} key={i} px={2}>
-//               <Image src={elem} alt="Slide 1" />
-//             </Flex>
-//           );
-//         })}
-//       </Slider>
-//     </Box>
-//   );
-// };
-
-// export default FooterSlider;
 
 // // ======================
 import React, { useState, useEffect } from "react";

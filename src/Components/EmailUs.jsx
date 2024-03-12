@@ -22,7 +22,7 @@ const EmailUs = () => {
       flexWrap={"wrap"}
       py={5}
     >
-      <Box h="100%" w={{ base: "100%", md: "45%" }}>
+      <Box h={{ base: "90%", md: "100%" }} w={{ base: "100%", md: "45%" }}>
         <Image src={emailImg} objectFit="cover" style={{ height: "100%" }} />
       </Box>
       <Flex h="100%" w={{ base: "100%", md: "55%" }} flexDir="column" mt={10}>
@@ -107,8 +107,7 @@ const EmailUs = () => {
               type="submit"
               colorScheme="black"
               size="md"
-              py={3}
-              mr={{ base: 0, md: "85%" }}
+              py={5}
               borderRadius={0}
               bg="black"
             >

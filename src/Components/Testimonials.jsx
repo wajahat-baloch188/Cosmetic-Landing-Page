@@ -1,34 +1,18 @@
 "use client";
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Flex, Text, Heading } from "@chakra-ui/react";
 
 import partten8 from "../../public/images/home-img/partten-8.png";
 import surfacePinkImg from "../../public/images/home-img/surface-pink.png";
-import message from "../../public/images/home-img/message.png";
 import { Dancing_Script } from "next/font/google";
 import Image from "next/image";
+import HomeFootSlider from "./HomeFootSlider";
+import message from "../../public/images/home-img/message.png";
 
 const DancingScript = Dancing_Script({
   subsets: ["latin"],
   fontWeight: "900",
 });
 
-const testimonials = [
-  {
-    name: "Sarah M",
-    content:
-      "I'm absolutely in love with EtherealElegance's skincare products! They've completely transformed my skin, leaving it radiant and glowing. Couldn't recommend them enough!",
-  },
-  {
-    name: "John Doe",
-    content:
-      "This company offers exceptional service. They were prompt, professional, and very helpful. I highly recommend them!",
-  },
-  {
-    name: "Jane Smith",
-    content:
-      "The product is amazing! It exceeded my expectations and is well worth the price. I will definitely be purchasing again.",
-  },
-];
 const Testimonials = () => {
   return (
     <>
@@ -74,11 +58,12 @@ const Testimonials = () => {
             color={"#C75D68"}
             fontSize={{ base: "18vw", md: "8vw" }}
             ml={{ base: -5, md: -8 }}
+            opacity={0.8}
           >
             Testimonial
           </Text>
         </Box>
-        {/* Box 3 - Responsive */}
+        {/* Box 3 */}
         <Box
           width="100%"
           minHeight={{ base: "63vh", md: "500px" }}
