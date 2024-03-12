@@ -7,11 +7,12 @@ import {
   ModalCloseButton,
   Text,
   Button,
-  Input,
+  // Input,
   ListItem,
   List,
   Checkbox,
   Box,
+  Input,
 } from "@chakra-ui/react";
 import Image from "next/image";
 // import { FaFacebookF, FaMailBulk, FaTwitter } from "react-icons/fa";
