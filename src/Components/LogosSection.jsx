@@ -9,70 +9,91 @@ import logo4 from "../../public/images/home-img/Logo4.png";
 import logo5 from "../../public/images/home-img/logo5.png";
 import RectangleLogo from "../../public/images/home-img/Rectangle-logo.png";
 
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 const LogosSection = () => {
+  const logos = [logo1, logo2, logo3, logo4, logo5];
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    speed: 5000,
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
   return (
     <Box
-      h={{ base: "auto", md: "35vh" }}
+      h={{ base: "15vh", md: "35vh" }}
       w="100%"
       position="relative"
+      display="flex"
       flexWrap="wrap"
       gap={5}
+      justifyContent={"center"}
+      alignItems={"center"}
+      px={{ base: 2, md: 20 }}
     >
-      {/* Logos */}
-      <Box
-        h={"100%"}
-        px={{ base: 2, md: 20 }}
-        w={"100%"}
-        display={"flex"}
-        justifyContent="center"
-        alignItems="center"
-        flexWrap={"wrap"}
-        gap={{ base: 5, md: 0 }}
-      >
-        <Box
-          h={{ base: "auto", md: "15vh" }}
-          w={{ base: "25%", md: "17%" }}
-          mb={{ base: 4, md: 0 }}
-          py={{ base: 4, md: 2 }}
-        >
-          <Image src={logo1} />
-        </Box>
-        <Box
-          h={{ base: "auto", md: "15vh" }}
-          w={{ base: "25%", md: "17%" }}
-          mb={{ base: 4, md: 0 }}
-          py={{ base: 4, md: 2 }}
-        >
-          <Image src={logo2} />
-        </Box>
-        <Box
-          h={{ base: "auto", md: "15vh" }}
-          w={{ base: "25%", md: "17%" }}
-          mb={{ base: 4, md: 0 }}
-          py={{ base: 4, md: 2 }}
-        >
-          <Image src={logo3} />
-        </Box>
-        <Box
-          h={{ base: "auto", md: "15vh" }}
-          w={{ base: "25%", md: "17%" }}
-          mb={{ base: 4, md: 0 }}
-          py={{ base: 4, md: 2 }}
-        >
-          <Image src={logo4} />
-        </Box>
-        <Box
-          h={{ base: "auto", md: "15vh" }}
-          w={{ base: "25%", md: "17%" }}
-          py={{ base: 4, md: 2 }}
-        >
-          <Image src={logo5} />
-        </Box>
-      </Box>
+      {/* -------------------- */}
+      <Slider {...settings} style={{ width: "100%" }}>
+        {logos.map((logo, i) => (
+          <Box
+            key={i}
+            display={"flex"}
+            justifyContent={"center"}
+            alignItems={"center"}
+            width={{ base: "80%", md: "210px" }}
+            height={{ base: "270px", md: "250px" }}
+            objectFit={"cover"}
+            boxShadow={"sm"}
+            position="relative"
+          >
+            {/* Logo Image */}
+            <Box
+              h={{ base: "20%", md: "100%" }}
+              w={"100%"}
+              display={"flex"}
+              justifyContent={"center"}
+              alignItems={"center"}
+              mt={{ base: 2, md: 0 }}
+            >
+              <Image
+                src={logo}
+                height="100%"
+                objectFit="contain"
+                position="absolute"
+                top="50%"
+                left="50%"
+                transform="translate(-50%, -50%)"
+              />
+            </Box>
+          </Box>
+        ))}
+      </Slider>
+      {/* -------------------- */}
 
       {/* Background Image */}
       <Box
-        h={{ base: "37vh", md: "auto" }} // Adjusted height for small screens
+        h={"40vh"} // Adjusted height for small screens
         w={"100%"}
         position="absolute"
         top={0}
@@ -80,9 +101,8 @@ const LogosSection = () => {
         right={0}
         bottom={0}
         zIndex={-1}
-        bg={"gray.200"}
       >
-        <Image src={RectangleLogo} objectFit="cover" />
+        <Image src={RectangleLogo} objectFit="cover" border="none" />
       </Box>
     </Box>
   );

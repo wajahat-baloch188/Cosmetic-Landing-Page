@@ -27,6 +27,7 @@ import {
   useColorModeValue,
   Image,
   Button,
+  textDecoration,
 } from "@chakra-ui/react";
 import {
   HamburgerIcon,
@@ -70,9 +71,10 @@ const Navbar = () => {
         <Flex h={16} alignItems="center" justifyContent="space-between">
           {/* Logo */}
           <Center>
-            <Link href="/">
+            <Link href="/" _hover={{ textDecoration: "none" }}>
               <Text
                 className={DancingScript.className}
+                fontWeight={900}
                 style={{ fontSize: "20px" }}
               >
                 Ethereal Elegance
@@ -87,7 +89,28 @@ const Navbar = () => {
             alignItems="center"
           >
             {links.map((link) => (
-              <Link key={link.href} href={link.href} mr={4} fontSize={"15px"}>
+              <Link
+                key={link.href}
+                href={link.href}
+                mr={4}
+                fontSize="15px"
+                position="relative" // Added to position the pseudo-element correctly
+                _after={{
+                  content: '""', // Necessary for pseudo-elements
+                  position: "absolute",
+                  width: "0", // Initial width of the underline
+                  height: "2px", // Thickness of the underline
+                  bottom: "0", // Position at the bottom of the Link
+                  left: "0",
+                  bg: "currentColor", // Use the current text color for the line
+                  transition: "width .3s ease-in-out", // Smooth transition for the width
+                }}
+                _hover={{
+                  _after: {
+                    width: "100%", // Full width on hover
+                  },
+                }}
+              >
                 {link.label}
               </Link>
             ))}
@@ -151,7 +174,29 @@ const Navbar = () => {
             <List spacing={4}>
               {links.map((link) => (
                 <ListItem key={link.href}>
-                  <Link href={link.href} onClick={onClose}>
+                  <Link
+                    href={link.href}
+                    onClick={onClose}
+                    key={link.href}
+                    mr={4}
+                    fontSize="15px"
+                    position="relative" // Added to position the pseudo-element correctly
+                    _after={{
+                      content: '""', // Necessary for pseudo-elements
+                      position: "absolute",
+                      width: "0", // Initial width of the underline
+                      height: "2px", // Thickness of the underline
+                      bottom: "0", // Position at the bottom of the Link
+                      left: "0",
+                      bg: "currentColor", // Use the current text color for the line
+                      transition: "width .3s ease-in-out", // Smooth transition for the width
+                    }}
+                    _hover={{
+                      _after: {
+                        width: "100%", // Full width on hover
+                      },
+                    }}
+                  >
                     {link.label}
                   </Link>
                 </ListItem>
