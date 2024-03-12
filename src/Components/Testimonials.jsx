@@ -1,11 +1,12 @@
 "use client";
-import { Box, Flex, Text } from "@chakra-ui/react";
+import { Box, Flex, Text, Heading } from "@chakra-ui/react";
 
 import partten8 from "../../public/images/home-img/partten-8.png";
 import surfacePinkImg from "../../public/images/home-img/surface-pink.png";
 import { Dancing_Script } from "next/font/google";
 import Image from "next/image";
 import HomeFootSlider from "./HomeFootSlider";
+import message from "../../public/images/home-img/message.png";
 
 const DancingScript = Dancing_Script({
   subsets: ["latin"],
