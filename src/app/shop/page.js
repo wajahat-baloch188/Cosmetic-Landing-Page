@@ -1292,9 +1292,34 @@ const Shop = () => {
               p="10px"
             >
               {product.isNew && (
-                <Flex
-                  w={{ md: "25%", base: "100%" }}
-                  justifyContent="flex-end"
+                <>
+                  <Flex justifyContent={"space-between"}   w={{ md: "100%", base: "100%" }}>
+
+                    <div>
+                  <IconButton
+                    size="xs"
+                    variant="fill"
+                    colorScheme="gray_200"
+                    icon={
+                      <Image src="images/products-img/img_mdi_heart_outline.svg" />
+                    }
+                    aria-label="348:1270-mdiheart_one"
+                    w="auto"
+                    borderRadius="20px"
+                  />
+                  <IconButton
+                    size="xs"
+                    variant="fill"
+                    colorScheme="gray_200"
+                    icon={<Image src="images/products-img/img_material_symbol.svg" />}
+                    aria-label="348:1278-materialsymbol"
+                    w="auto"
+                    borderRadius="20px"
+                  />
+</div>
+                   <Flex
+                  // w={{ md: "25%", base: "100%" }}
+                  // justifyContent="flex-end"
                 >
                   <Text
                     size="md"
@@ -1312,6 +1337,9 @@ const Shop = () => {
                     New
                   </Text>
                 </Flex>
+                </Flex>
+               
+                </>
               )}
               <Image
                 src={product.imageSrc}
