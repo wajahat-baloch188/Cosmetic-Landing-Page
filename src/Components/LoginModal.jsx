@@ -11,7 +11,6 @@ import {
   List,
   Checkbox,
   Box,
-  Input,
 } from "@chakra-ui/react";
 import Image from "next/image";
 // import { FaFacebookF, FaMailBulk, FaTwitter } from "react-icons/fa";
@@ -64,15 +63,15 @@ function LoginModal({ customIsOpen, customOnOpen, customOnClose }) {
               >
                 Login
               </Text>
-              <Input
+              <input
                 type="email"
-                border={"1px"}
+                border={"1px solid black"}
                 rounded={0}
                 placeholder={"email"}
               />
-              <Input
+              <input
                 type="password"
-                border={"1px"}
+                border={"1px solid black"}
                 rounded={0}
                 placeholder={"password"}
               />
