@@ -52,6 +52,7 @@ const LogosSection = () => {
       justifyContent={"center"}
       alignItems={"center"}
       px={{ base: 2, md: 20 }}
+      bg={"gray.100"}
     >
       {/* -------------------- */}
       <Slider {...settings} style={{ width: "100%" }}>
