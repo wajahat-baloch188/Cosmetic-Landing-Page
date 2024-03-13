@@ -73,7 +73,7 @@ const Testimonials = () => {
             <Image
               src={surfacePinkImg}
               objectFit="cover"
-              style={{ height: "63vh" }}
+              style={{ height: "63vh", width: "100vw" }}
             />
           </Box>
 
