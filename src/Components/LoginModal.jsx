@@ -7,15 +7,12 @@ import {
   ModalCloseButton,
   Text,
   Button,
-  ListItem,
   List,
   Checkbox,
   Input,
   ListItem,
-  List,
   Checkbox,
   Box,
-  Input,
 } from "@chakra-ui/react";
 import Image from "next/image";
 import lipistic from "../../public/images/login-img/lipistic.png";
