@@ -26,7 +26,7 @@ const EmailUs = () => {
         <Image
           src={emailImg}
           objectFit="cover"
-          style={{ height: "100%" }}
+          style={{ height: { base: "100%", sm: "50%", md: "100%" } }}
           alt="img"
         />
       </Box>
