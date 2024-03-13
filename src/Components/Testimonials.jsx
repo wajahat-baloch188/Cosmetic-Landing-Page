@@ -66,7 +66,7 @@ const Testimonials = () => {
         {/* Box 3 */}
         <Box
           width="100%"
-          minHeight={{ base: "63vh", md: "500px" }}
+          height={{ base: "63vh", md: "500px" }}
           position="relative"
           overflow={"hidden"}
         >
