@@ -68,6 +68,7 @@ const Testimonials = () => {
           width="100%"
           minHeight={{ base: "63vh", md: "500px" }}
           position="relative"
+          overflow={"hidden"}
         >
           <Box w="100%" h="100%">
             <Image
