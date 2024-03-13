@@ -75,7 +75,7 @@ const Navbar = () => {
               <Text
                 className={DancingScript.className}
                 fontWeight={900}
-                style={{ fontSize: "20px" }}
+                fontSize={{ base: "4vw", md: "20px" }}
               >
                 Ethereal Elegance
               </Text>
