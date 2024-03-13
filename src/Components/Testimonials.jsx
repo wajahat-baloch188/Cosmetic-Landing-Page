@@ -48,7 +48,7 @@ const Testimonials = () => {
             </Text>
           </Flex>
           <Box h={"100%"} w={"15%"}>
-            <Image src={partten8} alt="img" />
+            <Image src={partten8} />
           </Box>
         </Flex>
         {/* Box 2 */}
@@ -70,46 +70,14 @@ const Testimonials = () => {
           position="relative"
         >
           <Box w="100%" h="100%">
-            <Image src={surfacePinkImg} objectFit="cover" alt="img" />
+            <Image
+              src={surfacePinkImg}
+              objectFit="cover"
+              style={{ height: { base: "63vh", md: "100%" } }}
+            />
           </Box>
-          <Box
-            position="absolute"
-            top="35%"
-            left={{ base: "50%", md: "70%" }} // Center the white box horizontally on all devices
-            transform="translate(-50%, -50%)" // Maintain vertical centering
-            width={{ base: "80%", md: "350px" }} // Adjust base width for better spacing
-            height={{ base: "210px", md: "260px" }} // Increase base height significantly while maintaining aspect ratio
-            bg="white"
-            p={3}
-          >
-            <Box position={"relative"}>
-              <Box position={"absolute"} my={{ base: 3, md: 10 }} mx={2}>
-                <Box
-                  display={"flex"}
-                  justifyContent={"center"}
-                  flexDir={"column"}
-                >
-                  <Heading textTransform={"uppercase"} fontSize={20}>
-                    What are Client Say
-                  </Heading>
-                  <Text
-                    color={"#7A7A7A"}
-                    fontFamily={"Poppins"}
-                    fontSize={12}
-                    my={2}
-                  >
-                    I am absolutely in love with EtherealElegances skincare
-                    products! They have completely transformed my skin leaving
-                    it radiant and glowing. Could not recommend them enough!
-                  </Text>
-                  <Heading fontSize={20}>- Sarah M</Heading>
-                </Box>
-              </Box>
-              <Box position={"absolute"}>
-                <Image src={message} alt="img" />
-              </Box>
-            </Box>
-          </Box>
+
+          <HomeFootSlider />
         </Box>
       </Box>
     </>

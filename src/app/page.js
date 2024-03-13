@@ -22,6 +22,7 @@ import BestProduct from "@/Components/BestProduct";
 
 import { Dancing_Script } from "next/font/google";
 import ExploreMore from "@/Components/ExploreMore";
+import HomeFootSlider from "@/Components/HomeFootSlider";
 const DancingScript = Dancing_Script({
   subsets: ["latin"],
   fontWeight: "900",
@@ -642,7 +643,7 @@ export default function Home() {
       {/* Beauty Blog */}
       <BeautyBlogs />
 
-      {/* Testimonial */}
+      {/*  */}
       <Testimonials />
     </Box>
   );

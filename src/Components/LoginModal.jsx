@@ -7,7 +7,6 @@ import {
   ModalCloseButton,
   Text,
   Button,
-  // Input,
   ListItem,
   List,
   Checkbox,
