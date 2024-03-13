@@ -180,8 +180,55 @@ export default function HeroSection() {
             </Flex>
           </Box>
 
-          {/* Box-2 */}
           <Flex
+            border={"1px solid black"}
+            height={"90%"}
+            w={{ base: "100%", md: "100%", lg: "50%" }}
+          >
+            <Box border={"1px solid red"} w={{ lg: "60%" }}>
+              <Box
+                border={"1px solid red"}
+                w={"100%"}
+                height={"35%"}
+                pos={"relative"}
+              >
+                <Box pos={"absolute"} bottom={-20} right={0}>
+                  <Image
+                    src={pattern8Img}
+                    alt="img"
+                    style={{ height: "90%", w: "80%" }}
+                  />
+                </Box>
+              </Box>
+              <Box
+                border={"1px solid red"}
+                w={"100%"}
+                height={"75%"}
+                pos={"relative"}
+              >
+                <Box pos={"absolute"} bottom={12}>
+                  <Image src={girlImg} alt="img" objectFit="cover" zIndex={1} />
+                </Box>
+              </Box>
+            </Box>
+            <Box border={"1px solid green"} w={{ lg: "30%" }} pos={"relative"}>
+              <Box pos={"absolute"} bottom={0} left={-8} zIndex={0}>
+                <Image src={texture6Img} alt="img" />
+              </Box>
+            </Box>
+          </Flex>
+        </Box>
+      </Box>
+    </Box>
+  );
+}
+
+// ----------------
+{
+  /* Box-2 */
+}
+{
+  /* <Flex
             height={{ base: "70%", md: "90%" }}
             w={{ base: "100%", md: "50%" }}
             bg={"#F5F5F5"}
@@ -203,11 +250,12 @@ export default function HeroSection() {
                   />
                 </Box>
                 <Box
-                  width={{ base: "100%", md: "90%" }}
+                  width={{ base: "100%", md: "100%" }}
                   height={{ base: "50%", md: "75%" }}
                   objectFit="cover"
                   display={{ base: "none", md: "block" }}
                   zIndex={99}
+                  border={"1px solid black"}
                 >
                   <Image
                     src={girlImg}
@@ -226,7 +274,7 @@ export default function HeroSection() {
               height="100%"
               display="flex"
               alignItems="end"
-              marginLeft={{ base: "0", md: "-60px" }}
+              marginLeft={{ base: "0", md: "-30px" }}
             >
               <Box>
                 <Image
@@ -236,9 +284,5 @@ export default function HeroSection() {
                 />
               </Box>
             </Box>
-          </Flex>
-        </Box>
-      </Box>
-    </Box>
-  );
+          </Flex> */
 }
