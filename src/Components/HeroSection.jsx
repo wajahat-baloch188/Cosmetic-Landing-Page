@@ -32,7 +32,7 @@ export default function HeroSection() {
           {/* Box-1 */}
           <Box
             h={{ base: "70vh", md: "90%" }}
-            w={{ base: "100%", md: "50%" }}
+            w={{ base: "100%", md: "100%", lg: "50%" }}
             bg={"#F5F5F5"}
           >
             {/* box-1-1 */}
@@ -185,7 +185,7 @@ export default function HeroSection() {
             height={{ base: "70%", md: "90%" }}
             w={{ base: "100%", md: "50%" }}
             bg={"#F5F5F5"}
-            display={{ base: "none", md: "flex" }}
+            display={{ base: "none", md: "none", lg: "flex" }}
           >
             <Box
               width={{ base: "100%", md: "70%" }}
@@ -203,7 +203,7 @@ export default function HeroSection() {
                   />
                 </Box>
                 <Box
-                  width={{ base: "100%", md: "100%" }}
+                  width={{ base: "100%", md: "90%" }}
                   height={{ base: "50%", md: "75%" }}
                   objectFit="cover"
                   display={{ base: "none", md: "block" }}
@@ -214,7 +214,7 @@ export default function HeroSection() {
                     zIndex={999}
                     alt="img"
                     style={{
-                      height: "100%",
+                      height: { base: "100%", sm: "50%", md: "100%" },
                       width: { base: "100%", md: "100%" },
                     }}
                   />
@@ -226,7 +226,7 @@ export default function HeroSection() {
               height="100%"
               display="flex"
               alignItems="end"
-              marginLeft={{ base: "0", md: "-30px" }}
+              marginLeft={{ base: "0", md: "-60px" }}
             >
               <Box>
                 <Image
