@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import {
   Modal,
@@ -6,7 +7,6 @@ import {
   ModalCloseButton,
   Text,
   Button,
-  Input,
   ListItem,
   List,
   Checkbox,
@@ -17,9 +17,9 @@ import {
   Box,
 } from "@chakra-ui/react";
 import Image from "next/image";
-import girl from "../../public/images/login-img/girl.png";
-// import jewe from "../../public//images/login-img/jewe.png";
 import lipistic from "../../public/images/login-img/lipistic.png";
+
+import girl from "../../public/images/login-img/girl.png";
 import leaf from "../../public/images/login-img/leaf.png";
 import texture from "../../public/images/login-img/texture.png";
 import { FaFacebookF, FaMailBulk, FaTwitter } from "react-icons/fa";
@@ -41,7 +41,7 @@ function LoginModal({ customIsOpen, customOnOpen, customOnClose }) {
       >
         <ModalCloseButton zIndex={"10"} />
         <Box position={"absolute"}>
-          <Image width={"200"} src={texture} />
+          <Image width={"200"} src={texture} alt="img" />
         </Box>
         <Box h={"full"} display={"flex"}>
           <Box
@@ -63,8 +63,18 @@ function LoginModal({ customIsOpen, customOnOpen, customOnClose }) {
               >
                 Login
               </Text>
-              <Input border={"1px"} rounded={0} placeholder={"email"} />
-              <Input border={"1px"} rounded={0} placeholder={"password"} />
+              <input
+                type="email"
+                border={"1px solid black"}
+                rounded={0}
+                placeholder={"email"}
+              />
+              <input
+                type="password"
+                border={"1px solid black"}
+                rounded={0}
+                placeholder={"password"}
+              />
               <Box
                 w={"full"}
                 display={"flex"}
@@ -127,11 +137,12 @@ function LoginModal({ customIsOpen, customOnOpen, customOnClose }) {
             bg={"#F5F5F5"}
             position={"relative"}
           >
+            {/* Your image components go here */}
             <Box position={"absolute"} right={"0"}>
-              <Image src={lipistic} />
+              <Image src={lipistic} alt="img" />
             </Box>
             <Box position={"absolute"} left={"0"} top={"16"}>
-              <Image src={leaf} />
+              <Image src={leaf} alt="img" />
             </Box>
             <Box zIndex={"2"} position={"absolute"} right={"6"} bottom={"80"}>
               {/* <Image src={jewe} /> */}
@@ -140,7 +151,7 @@ function LoginModal({ customIsOpen, customOnOpen, customOnClose }) {
               {/* <Image width={"30"} src={jewe} /> */}
             </Box>
             <Box position={"absolute"} right={"10"} bottom={"0"}>
-              <Image width={"450"} src={girl} />
+              <Image width={"450"} src={girl} alt="img" />
             </Box>
           </Box>
         </Box>

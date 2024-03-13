@@ -4,8 +4,7 @@ import jeweImg from "../../public/images/home-img/Jewe2.png";
 import textureImg from "../../public/images/home-img/texture-3.png";
 import texture5slImg from "../../public/images/home-img/texture-5sl.png";
 import texture_2 from "../../public/images/home-img/texture-6.png";
-import lipistic_img from "../../public/images/about-img/lipistic.png"
- 
+import lipistic_img from "../../public/images/about-img/lipistic.png";
 
 import { Dancing_Script } from "next/font/google";
 const DancingScript = Dancing_Script({
@@ -13,8 +12,7 @@ const DancingScript = Dancing_Script({
   fontWeight: "900",
 });
 
-const AboutHeroSec = ({heading,text}) => {
-
+const AboutHeroSec = ({ heading, text }) => {
   return (
     <Box>
       <Box h={{ base: "85vh", md: "100vh" }} w="100%" bg={"#F5F5F5"}>
@@ -41,7 +39,7 @@ const AboutHeroSec = ({heading,text}) => {
                   alignItems={"center"}
                   width={{ base: "12vw", md: "3.5vw" }}
                 >
-                  <Image src={jeweImg} />
+                  <Image src={jeweImg} alt="img" />
                 </Box>
               </Box>
               <Box
@@ -52,30 +50,35 @@ const AboutHeroSec = ({heading,text}) => {
                 // padding={"0 0 20px 25px"}
                 width={{ base: "12vw", md: "3.5vw" }}
               >
-                <Image src={jeweImg} />
+                <Image src={jeweImg} alt="img" />
               </Box>
-              <Flex
-              w={"full"}
-              justifyContent={'space-between'}
-              >
-              <Box
-                w={"100%"}
-                h={"100%"}
-                display={'flex'}
-                justifyContent={'start'}
-                width={{ base: "40vw", md: "16vw" }}
-              >
-                <Image src={texture5slImg} style={{ height: "55%" }} />
-              </Box>
-              <Box
-                w={"100%"}
-                h={"100%"}
-                display={'flex'}
-                justifyContent={'end'}
-                width={{ base: "40vw", md: "16vw" }}
-              >
-                <Image src={lipistic_img} style={{ height: "70%" }} />
-              </Box>
+              <Flex w={"full"} justifyContent={"space-between"}>
+                <Box
+                  w={"100%"}
+                  h={"100%"}
+                  display={"flex"}
+                  justifyContent={"start"}
+                  width={{ base: "40vw", md: "16vw" }}
+                >
+                  <Image
+                    src={texture5slImg}
+                    style={{ height: "55%" }}
+                    alt="img"
+                  />
+                </Box>
+                <Box
+                  w={"100%"}
+                  h={"100%"}
+                  display={"flex"}
+                  justifyContent={"end"}
+                  width={{ base: "40vw", md: "16vw" }}
+                >
+                  <Image
+                    src={lipistic_img}
+                    style={{ height: "70%" }}
+                    alt="img"
+                  />
+                </Box>
               </Flex>
             </Box>
             {/* box-1-2 */}
@@ -116,7 +119,7 @@ const AboutHeroSec = ({heading,text}) => {
                     fontFamily={"Times new Roman"}
                     fontStyle={"italic"}
                     fontWeight={400}
-                    fontSize={{base:"40px", md:"50px"}}
+                    fontSize={{ base: "40px", md: "50px" }}
                     lineHeight={"64.39px"}
                     color={"#323232"}
                   >
@@ -126,7 +129,7 @@ const AboutHeroSec = ({heading,text}) => {
                     py={{ base: 1, md: 5 }}
                     fontFamily={"Poppins"}
                     fontWeight={300}
-                    fontSize={{base:"13px", md:"16px"}}
+                    fontSize={{ base: "13px", md: "16px" }}
                     textTransform={"uppercase"}
                     lineHeight={"30px"}
                     color={"#383838"}
@@ -134,7 +137,6 @@ const AboutHeroSec = ({heading,text}) => {
                     {text}
                   </Text>
                 </Box>
-
               </Box>
             </Box>
             {/* box-1-3 */}
@@ -189,7 +191,7 @@ const AboutHeroSec = ({heading,text}) => {
         </Box>
       </Box>
     </Box>
-  )
-}
+  );
+};
 
 export default AboutHeroSec;

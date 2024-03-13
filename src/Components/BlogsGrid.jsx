@@ -79,7 +79,7 @@ const BlogsGrid = () => {
             mb={4}
           >
             <CardBody>
-              <Image src={elem.img} />
+              <Image src={elem.img} alt="img" />
               <Stack mt="1" spacing="2">
                 <Text
                   fontFamily={"Poppins"}

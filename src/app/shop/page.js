@@ -60,7 +60,6 @@ const products = [
     category: "liplose",
     price: "$30.00",
     isNew: false,
-
   },
   {
     imageSrc: "images/products-img/img_eyelinear_image_5.png",
@@ -68,7 +67,6 @@ const products = [
     category: "liplose",
     price: "$30.00",
     isNew: false,
-
   },
   {
     imageSrc: "images/products-img/img_eyelinear_image_6.png",
@@ -76,7 +74,6 @@ const products = [
     category: "liplose",
     price: "$30.00",
     isNew: true,
-
   },
   {
     imageSrc: "images/products-img/img_eyelinear_image_222x180.png",
@@ -92,8 +89,6 @@ const products = [
   },
   // Add more products with isNew property...
 ];
-
-
 
 const Shop = () => {
   return (
@@ -122,7 +117,7 @@ const Shop = () => {
             All
           </Text>
           <Box h="2px" mt="10px" bg="gray.400" w="100%" />
-          <Box h="5px" rounded={'full'} mt="-4px" bg="red.300" w="28%" />
+          <Box h="5px" rounded={"full"} mt="-4px" bg="red.300" w="28%" />
         </Flex>
         <Flex
           gap="23px"
@@ -131,25 +126,25 @@ const Shop = () => {
           alignItems="end"
         >
           <Flex gap="22px" w={{ md: "39%", base: "100%" }} alignItems="center">
-            <Text color="gray.500_01" whiteSpace={'nowrap'} fontWeight={500}>
+            <Text color="gray.500_01" whiteSpace={"nowrap"} fontWeight={500}>
               Sort by:
             </Text>
             <SelectBox
               shape="round"
-              indicator={<Image src="images/products-img/img_bxsuparrow.svg" />}
+              indicator={
+                <Image src="images/products-img/img_bxsuparrow.svg" alt="img" />
+              }
               name="relevance"
-              
               placeholder="Relevance"
               options={dropDownOptions}
-              style={{ fontWeight: 300, gap: "1px", w: "81%"  }}
+              style={{ fontWeight: 300, gap: "1px", w: "81%" }}
             />
           </Flex>
           <Box h="1px" bg="gray.500_01" w="100%" />
         </Flex>
       </Container>
 
-
- <Container
+      <Container
         mt="27px"
         w="100%"
         display="flex"
@@ -169,8 +164,8 @@ const Shop = () => {
           <Text size="4xl" color="black.900">
             Filter By
           </Text>
-           <Box h="2px" mt="10px" bg="gray.400" w="100%" />
-          <Box h="5px" rounded={'full'} mt="-4px" bg="red.300" w="28%" />
+          <Box h="2px" mt="10px" bg="gray.400" w="100%" />
+          <Box h="5px" rounded={"full"} mt="-4px" bg="red.300" w="28%" />
           <Text size="4xl" color="black.900" mt="30px" fontSize="22.84px">
             Size
           </Text>
@@ -262,7 +257,12 @@ const Shop = () => {
           >
             €13.00 - €44.00
           </Text>
-          <Image src="images/products-img/img_group_223.svg" h="17px" mt="2px" />
+          <Image
+            src="images/products-img/img_group_223.svg"
+            h="17px"
+            mt="2px"
+            alt="img"
+          />
           <Text size="5xl" color="black.900" mt="51px">
             Tags
           </Text>
@@ -301,22 +301,16 @@ const Shop = () => {
           <Image
             src="images/products-img/img_rectangle_163.png"
             mt="28px"
+            alt="img"
             w={{ md: "94%", base: "100%" }}
             h="431px"
           />
         </Flex>
 
-
-
-
-
-
-        
-
         <Flex
           gap="53px"
           w={{ md: "67%", base: "100%" }}
-          borderTop={'1px solid grey'}
+          borderTop={"1px solid grey"}
           flexDirection="column"
           alignItems="center"
         >
@@ -1263,138 +1257,147 @@ const Shop = () => {
           </SimpleGrid> 
           */}
 
-{/* Simple Grid with map */}
-<SimpleGrid
-      mt={10}
-      w="100%"
-      gap={{ md: "41px", base: "20px" }}
-      columns={{ md: 3, base: 1, sm: 2 }}
-      justifyContent="center"
-    >
-      {products.map((product, index) => (
-        <Flex
-          key={index}
-          gap="12px"
-          w="100%"
-          cursor="pointer"
-          flexDirection="column"
-          alignItems="center"
-          _hover={{ boxShadow: "xs" }}
-        >
-          <Flex w="100%" flexDirection="column" alignItems="center">
-            <Flex
-              gap="22px"
-              bg="white.A700"
-              boxShadow="xs"
-              w="100%"
-              flexDirection="column"
-              alignItems="center"
-              p="10px"
-            >
-              {product.isNew && (
-                <>
-                  <Flex justifyContent={"space-between"}   w={{ md: "100%", base: "100%" }}>
-
-                    <div>
-                  <IconButton
-                    size="xs"
-                    variant="fill"
-                    colorScheme="gray_200"
-                    icon={
-                      <Image src="images/products-img/img_mdi_heart_outline.svg" />
-                    }
-                    aria-label="348:1270-mdiheart_one"
-                    w="auto"
-                    borderRadius="20px"
-                  />
-                  <IconButton
-                    size="xs"
-                    variant="fill"
-                    colorScheme="gray_200"
-                    icon={<Image src="images/products-img/img_material_symbol.svg" />}
-                    aria-label="348:1278-materialsymbol"
-                    w="auto"
-                    borderRadius="20px"
-                  />
-</div>
-                   <Flex
-                  // w={{ md: "25%", base: "100%" }}
-                  // justifyContent="flex-end"
-                >
-                  <Text
-                    size="md"
-                    color="white.A700"
-                    fontSize="13.64px"
-                    bg="red.300"
-                    w="70px"
-                    justifyContent="center"
-                    display="flex"
+          {/* Simple Grid with map */}
+          <SimpleGrid
+            mt={10}
+            w="100%"
+            gap={{ md: "41px", base: "20px" }}
+            columns={{ md: 3, base: 1, sm: 2 }}
+            justifyContent="center"
+          >
+            {products.map((product, index) => (
+              <Flex
+                key={index}
+                gap="12px"
+                w="100%"
+                cursor="pointer"
+                flexDirection="column"
+                alignItems="center"
+                _hover={{ boxShadow: "xs" }}
+              >
+                <Flex w="100%" flexDirection="column" alignItems="center">
+                  <Flex
+                    gap="22px"
+                    bg="white.A700"
+                    boxShadow="xs"
+                    w="100%"
+                    flexDirection="column"
                     alignItems="center"
-                    h="27px"
-                    px="20px"
-                    py="3px"
+                    p="10px"
                   >
-                    New
+                    {product.isNew && (
+                      <>
+                        <Flex
+                          justifyContent={"space-between"}
+                          w={{ md: "100%", base: "100%" }}
+                        >
+                          <div>
+                            <IconButton
+                              size="xs"
+                              variant="fill"
+                              colorScheme="gray_200"
+                              icon={
+                                <Image
+                                  src="images/products-img/img_mdi_heart_outline.svg"
+                                  alt="img"
+                                />
+                              }
+                              aria-label="348:1270-mdiheart_one"
+                              w="auto"
+                              borderRadius="20px"
+                            />
+                            <IconButton
+                              size="xs"
+                              variant="fill"
+                              colorScheme="gray_200"
+                              icon={
+                                <Image
+                                  src="images/products-img/img_material_symbol.svg"
+                                  alt="img"
+                                />
+                              }
+                              aria-label="348:1278-materialsymbol"
+                              w="auto"
+                              borderRadius="20px"
+                            />
+                          </div>
+                          <Flex
+                          // w={{ md: "25%", base: "100%" }}
+                          // justifyContent="flex-end"
+                          >
+                            <Text
+                              size="md"
+                              color="white.A700"
+                              fontSize="13.64px"
+                              bg="red.300"
+                              w="70px"
+                              justifyContent="center"
+                              display="flex"
+                              alignItems="center"
+                              h="27px"
+                              px="20px"
+                              py="3px"
+                            >
+                              New
+                            </Text>
+                          </Flex>
+                        </Flex>
+                      </>
+                    )}
+                    <Image
+                      src={product.imageSrc}
+                      mb="49px"
+                      alt="img"
+                      w={{ md: "43%", base: "100%" }}
+                      h="auto"
+                    />
+                  </Flex>
+                </Flex>
+                <Flex
+                  gap="9px"
+                  w={{ md: "37%", base: "100%" }}
+                  flexDirection="column"
+                  alignItems="center"
+                >
+                  <Flex
+                    gap="1px"
+                    w="100%"
+                    flexDirection="column"
+                    alignItems="center"
+                  >
+                    <Text
+                      size="xs"
+                      color="red.300"
+                      letterSpacing="1.50px"
+                      textTransform="uppercase"
+                      textAlign="right"
+                      fontSize="9.97px"
+                    >
+                      {product.category}
+                    </Text>
+                    <Text
+                      fontFamily="Times New Roman"
+                      textTransform="uppercase"
+                      textAlign="center"
+                      fontSize="14.96px"
+                    >
+                      {product.title}
+                    </Text>
+                  </Flex>
+                  <Text
+                    textTransform="uppercase"
+                    textAlign="center"
+                    fontSize="14.96px"
+                    fontWeight={300}
+                  >
+                    {product.price}
                   </Text>
                 </Flex>
-                </Flex>
-               
-                </>
-              )}
-              <Image
-                src={product.imageSrc}
-                mb="49px"
-                w={{ md: "43%", base: "100%" }}
-                h="auto"
-              />
-            </Flex>
-          </Flex>
-          <Flex
-            gap="9px"
-            w={{ md: "37%", base: "100%" }}
-            flexDirection="column"
-            alignItems="center"
-          >
-            <Flex
-              gap="1px"
-              w="100%"
-              flexDirection="column"
-              alignItems="center"
-            >
-              <Text
-                size="xs"
-                color="red.300"
-                letterSpacing="1.50px"
-                textTransform="uppercase"
-                textAlign="right"
-                fontSize="9.97px"
-              >
-                {product.category}
-              </Text>
-              <Text
-                fontFamily="Times New Roman"
-                textTransform="uppercase"
-                textAlign="center"
-                fontSize="14.96px"
-              >
-                {product.title}
-              </Text>
-            </Flex>
-            <Text
-              textTransform="uppercase"
-              textAlign="center"
-              fontSize="14.96px"
-              fontWeight={300}
-            >
-              {product.price}
-            </Text>
-          </Flex>
-        </Flex>
-      ))}
-    </SimpleGrid>
+              </Flex>
+            ))}
+          </SimpleGrid>
 
-
-          <Flex gap="5px" mb={'10vw'} w={{ md: "15%", base: "100%" } }>
+          <Flex gap="5px" mb={"10vw"} w={{ md: "15%", base: "100%" }}>
             <Text
               size="4xl"
               h="46px"
@@ -1435,20 +1438,16 @@ const Shop = () => {
               size="md"
               variant="fill"
               colorScheme="blue_gray_100_63"
-              icon={<Image src="images/products-img/img_group_232.svg" />}
+              icon={
+                <Image src="images/products-img/img_group_232.svg" alt="img" />
+              }
               aria-label="348:1415-iconbutton"
               w="46px"
               borderRadius="50%"
             />
-          
           </Flex>
         </Flex>
       </Container>
-
-
-
-
-      
     </Box>
   );
 };

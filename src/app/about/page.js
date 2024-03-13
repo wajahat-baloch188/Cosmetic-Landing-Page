@@ -135,7 +135,7 @@ const About = () => {
               h={"50vh"}
               w={"100%"}
             >
-              <Image src={makupImg} />
+              <Image src={makupImg} alt="img" />
             </Box>
           </Box>
         </Box>
@@ -164,6 +164,7 @@ const About = () => {
               maxW={{ base: "50%", md: "10%" }}
               m="auto"
               src={BrowPowderImg}
+              alt="img"
             />
           </Box>
 
@@ -196,7 +197,7 @@ const About = () => {
                 h={{ base: "10", md: "'16'" }}
                 w={{ base: "10", md: "'16'" }}
               >
-                <Image src={icon1} />
+                <Image src={icon1} alt="img" />
               </Box>
               <Heading
                 fontSize={{ base: "xl", md: "3xl" }}
@@ -227,7 +228,7 @@ const About = () => {
                 h={{ base: "10", md: "'16'" }}
                 w={{ base: "10", md: "'16'" }}
               >
-                <Image src={icon2} />
+                <Image src={icon2} alt="img" />
               </Box>
               <Heading
                 fontSize={{ base: "xl", md: "3xl" }}
@@ -257,7 +258,7 @@ const About = () => {
                 h={{ base: "10", md: "'16'" }}
                 w={{ base: "10", md: "'16'" }}
               >
-                <Image src={icon3} />
+                <Image src={icon3} alt="img" />
               </Box>
               <Heading
                 fontSize={{ base: "xl", md: "3xl" }}
@@ -279,7 +280,7 @@ const About = () => {
             transition="transform 0.5s"
             transform={"rotateY(180deg)"}
           >
-            <Image src={leafImg} />
+            <Image src={leafImg} alt="img" />
           </Box>
         </Flex>
 

@@ -42,6 +42,7 @@ export default function NotFound() {
             <Box w={"30%"} h={"100%"} position={"absolute"} top={8} left={0}>
               <Image
                 src={texture6Img}
+                alt="img"
                 style={{ width: "60%", maxHeight: "100%" }}
               />
             </Box>
@@ -52,10 +53,10 @@ export default function NotFound() {
               left={"30%"}
               top={"90%"}
             >
-              <Image src={jeweImg} style={{ width: "17%" }} />
+              <Image src={jeweImg} alt="img" style={{ width: "17%" }} />
             </Box>
             <Box w={"25%"} h={"100%"} position={"absolute"} left={"50%"}>
-              <Image src={texture5slImg} style={{ width: "90%" }} />
+              <Image src={texture5slImg} style={{ width: "90%" }} alt="img" />
             </Box>
             <Box
               w={"25%"}
@@ -64,7 +65,7 @@ export default function NotFound() {
               left={"80%"}
               top={"70%"}
             >
-              <Image src={jeweImg} style={{ width: "20%" }} />
+              <Image src={jeweImg} style={{ width: "20%" }} alt="img" />
             </Box>
           </Flex>
 
@@ -117,6 +118,7 @@ export default function NotFound() {
                 <Image
                   src={pattern8Img}
                   style={{ width: "60%", maxHeight: "100%" }}
+                  alt="img"
                 />
               </Box>
               <Box
@@ -126,7 +128,7 @@ export default function NotFound() {
                 left={"40%"}
                 top={"50%"}
               >
-                <Image src={jeweImg} style={{ width: "20%" }} />
+                <Image src={jeweImg} style={{ width: "20%" }} alt="img" />
               </Box>
               <Box
                 w={{ base: "40%", md: "25%" }}
@@ -135,7 +137,7 @@ export default function NotFound() {
                 right={0}
                 bottom={0}
               >
-                <Image src={textureImg} style={{ width: "90%" }} />
+                <Image src={textureImg} style={{ width: "90%" }} alt="img" />
               </Box>
             </Flex>
           </Box>

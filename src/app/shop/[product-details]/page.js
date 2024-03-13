@@ -71,6 +71,7 @@ const ProductDetails = () => {
               {largeImage ? (
                 <Image
                   src={largeImage}
+                  alt="img"
                   objectFit="cover"
                   style={{ height: "100%", width: "100%" }}
                 />
@@ -78,6 +79,7 @@ const ProductDetails = () => {
                 <Image
                   src={liplose} // Initial small image
                   objectFit="cover"
+                  alt="img"
                   style={{ height: "100%", width: "100%" }}
                   onClick={() => handleImageClick(liplose)} // Set click handler for large version
                 />
@@ -95,6 +97,7 @@ const ProductDetails = () => {
               <Image
                 src={img2}
                 objectFit="cover"
+                alt="img"
                 style={{ height: "100%", width: "100%" }}
                 onClick={() => handleImageClick(img2)} // Set click handler for large version
               />
@@ -109,6 +112,7 @@ const ProductDetails = () => {
             >
               <Image
                 src={liplose}
+                alt="img"
                 objectFit="cover"
                 style={{ height: "100%", width: "100%" }}
                 onClick={() => handleImageClick(liplose)} // Set click handler for large version
@@ -123,6 +127,7 @@ const ProductDetails = () => {
             >
               <Image
                 src={img2}
+                alt="img"
                 objectFit="cover"
                 style={{ height: "100%", width: "100%" }}
                 onClick={() => handleImageClick(img2)} // Set click handler for large version

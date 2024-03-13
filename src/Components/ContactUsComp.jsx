@@ -54,7 +54,7 @@ const ContactUsComp = () => {
               h={{ base: "40px", md: "60px" }}
               pt={{ base: 4, md: 2 }}
             >
-              <Image src={jeweImg} />
+              <Image src={jeweImg} alt="img" />
             </Box>
           </Box>
           <Flex
@@ -126,7 +126,7 @@ const ContactUsComp = () => {
         </Flex>
         <Box h="20%" pos="relative">
           <Box width="25px" h="25px" pos="absolute" top={1} left={8}>
-            <Image src={jeweImg} />
+            <Image src={jeweImg} alt="img" />
           </Box>
         </Box>
       </Box>
@@ -146,7 +146,7 @@ const ContactUsComp = () => {
           fontSize={{ base: "5vw", md: "3vw" }}
           mt={{ base: 1, md: 0 }}
         >
-          Eletheral Elegance Contact"
+          Eletheral Elegance Contact
         </Text>
         <Text
           fontFamily={"Times New Roman"}

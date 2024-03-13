@@ -50,7 +50,7 @@ const ExploreMore = () => {
       </Box>
       <Box h={"100%"} w={"20%"} pos={"relative"}>
         <Box pos={"absolute"} bottom={0}>
-          <Image src={texture3} />
+          <Image src={texture3} alt="img" />
         </Box>
       </Box>
     </Flex>
