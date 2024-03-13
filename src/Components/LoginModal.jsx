@@ -8,7 +8,6 @@ import {
   Text,
   Button,
   List,
-  Checkbox,
   Input,
   ListItem,
   Checkbox,
