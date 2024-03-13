@@ -69,13 +69,13 @@ const Testimonials = () => {
           minHeight={{ base: "63vh", md: "500px" }}
           position="relative"
         >
-          {/* <Box w="100%" h="100%"> */}
-          <Image
-            src={surfacePinkImg}
-            objectFit="cover"
-            style={{ height: "63vh" }}
-          />
-          {/* </Box> */}
+          <Box w="100%" h="100%">
+            <Image
+              src={surfacePinkImg}
+              objectFit="cover"
+              style={{ height: "63vh" }}
+            />
+          </Box>
 
           <HomeFootSlider />
         </Box>
