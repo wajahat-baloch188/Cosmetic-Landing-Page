@@ -38,11 +38,11 @@ const HomeFootSlider = () => {
     <>
       <Box
         position="absolute"
-        top="35%"
+        top={{ base: "40%", md: "35%" }}
         left={{ base: "50%", md: "70%" }}
         transform="translate(-50%, -50%)"
-        width={{ base: "80%", md: "350px" }}
-        height={{ base: "250px", md: "260px" }}
+        width={{ base: "300px", md: "415px" }}
+        height={{ base: "230px", md: "310px" }}
         bg="white"
         p={3}
       >
@@ -70,7 +70,11 @@ const HomeFootSlider = () => {
             })}
           </Box>
 
-          <Box position={"absolute"}>
+          <Box
+            position={"absolute"}
+            width={{ base: "278px", md: "390px" }}
+            height={{ base: "270px", md: "290px" }}
+          >
             <Image src={message} />
           </Box>
 
@@ -79,7 +83,7 @@ const HomeFootSlider = () => {
             top={"200"}
             right={"10"}
             display={"flex"}
-            mt={{ base: -3, md: 0 }}
+            mt={{ base: -5, md: 9 }}
           >
             {messageText.map((ele, ind) => (
               <Box
