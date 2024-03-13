@@ -13,13 +13,9 @@ import {
   Box,
 } from "@chakra-ui/react";
 import Image from "next/image";
-// import { FaFacebookF, FaMailBulk, FaTwitter } from "react-icons/fa";
-// import girl from "../../public/images/login-img/girl.png";
 import lipistic from "../../public/images/login-img/lipistic.png";
 
 import girl from "../../public/images/login-img/girl.png";
-// import jewe from "../../public//images/login-img/jewe.png";
-// import lipistic from "../../public/images/login-img/lipistic.png";
 import leaf from "../../public/images/login-img/leaf.png";
 import texture from "../../public/images/login-img/texture.png";
 import { FaFacebookF, FaMailBulk, FaTwitter } from "react-icons/fa";
