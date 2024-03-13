@@ -11,6 +11,7 @@ import {
   List,
   Checkbox,
   Box,
+  Input,
 } from "@chakra-ui/react";
 import Image from "next/image";
 import lipistic from "../../public/images/login-img/lipistic.png";
@@ -59,13 +60,13 @@ function LoginModal({ customIsOpen, customOnOpen, customOnClose }) {
               >
                 Login
               </Text>
-              <input
+              <Input
                 type="email"
                 border={"1px solid black"}
                 rounded={0}
                 placeholder={"email"}
               />
-              <input
+              <Input
                 type="password"
                 border={"1px solid black"}
                 rounded={0}
