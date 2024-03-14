@@ -38,7 +38,7 @@ const HomeFootSlider = () => {
     <>
       <Box
         position="absolute"
-        top={{ base: "40%", md: "35%" }}
+        top={{ base: "40%", md: "45%", lg: "43%" }}
         left={{ base: "50%", md: "70%" }}
         transform="translate(-50%, -50%)"
         width={{ base: "300px", md: "415px" }}
