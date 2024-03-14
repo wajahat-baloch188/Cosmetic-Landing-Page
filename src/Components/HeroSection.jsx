@@ -19,7 +19,7 @@ export default function HeroSection() {
   return (
     <Box>
       <Box
-        h={{ base: "80vh", mg: "80vh", lg: "90vh" }}
+        h={{ base: "80vh", mg: "80vh", lg: "80vh" }}
         w="100%"
         bg={"#F5F5F5"}
         overflow={"hidden"}
