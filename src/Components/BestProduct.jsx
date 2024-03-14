@@ -25,7 +25,7 @@ const BestProduct = () => {
         <Box
           h={{ base: "50%", md: "100%" }}
           w={{ base: "100%", md: "50%" }}
-          px={{ base: 5, md: 20 }}
+          px={{ base: 5, md: 8, lg: 20 }}
         >
           <Box h="100%" display="flex" justifyContent="center" flexDir="column">
             <Text

@@ -239,7 +239,7 @@ export default function Home() {
 
       {/* About us */}
       <Box
-        height={{ base: "auto", md: "100vh" }}
+        height={{ base: "auto", md: "92vh", lg: "100vh" }}
         width="100%"
         display="flex"
         flexWrap="wrap"
@@ -247,7 +247,7 @@ export default function Home() {
         {/* Box 1 */}
         <Box
           mt={{ base: 10, md: 0 }}
-          height={{ base: "80vh", md: "100vh" }}
+          height={{ base: "80vh", md: "88vh", lg: "100vh" }}
           width={{ base: "100%", md: "50%" }}
           position="relative"
           display="flex"
@@ -315,7 +315,7 @@ export default function Home() {
 
         {/* Box 2 */}
         <Box
-          height={{ base: "72vh", md: "100vh" }}
+          height={{ base: "72vh", md: "92vh", lg: "100vh" }}
           width={{ base: "100%", md: "50%" }}
           display={"flex"}
           flexDir={"row"}
@@ -327,7 +327,7 @@ export default function Home() {
           <Box
             display={"flex"}
             flexDirection={"column"}
-            pr={{ base: 2, md: 40 }}
+            pr={{ base: 2, md: 6, lg: 40 }}
             pl={{ base: 2, md: 0 }}
           >
             <Text
@@ -341,12 +341,16 @@ export default function Home() {
             <Text
               fontFamily={"Times New Roman"}
               fontStyle={"italic"}
-              fontSize={{ base: "32px", md: "34px" }}
+              fontSize={{ base: "32px", md: "28px", lg: "34px" }}
             >
               We Guaranted a High Quality
             </Text>
             <Box borderLeft={"2px solid #C75D68"} pl={4} my={3} mb={3}>
-              <Text fontFamily={"Poppins"} color={"#303030"} fontSize={"14px"}>
+              <Text
+                fontFamily={"Poppins"}
+                color={"#303030"}
+                fontSize={{ base: "10px", md: "12px", lg: "14px" }}
+              >
                 At EtherealElegance, we believe in the transformative power of
                 beauty. Our curated cosmetics collection is meticulously crafted
                 to inspire confidence and elevate your natural allure.

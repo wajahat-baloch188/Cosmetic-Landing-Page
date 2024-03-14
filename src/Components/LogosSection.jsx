@@ -65,12 +65,11 @@ const LogosSection = () => {
             width={{ base: "80%", md: "210px" }}
             height={{ base: "270px", md: "250px" }}
             objectFit={"cover"}
-            boxShadow={"sm"}
             position="relative"
           >
             {/* Logo Image */}
             <Box
-              h={{ base: "20%", md: "100%" }}
+              h={{ base: "20%", md: "80%", lg: "100%" }}
               w={"100%"}
               display={"flex"}
               justifyContent={"center"}
