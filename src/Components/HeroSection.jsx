@@ -64,7 +64,7 @@ export default function HeroSection() {
                 h={"100%"}
                 display={"flex"}
                 justifyContent={"flex-end"}
-                width={{ base: "40vw", md: "18vw", lg: "17vw" }}
+                width={{ base: "40vw", md: "18vw", lg: "100%" }}
               >
                 <Image
                   src={texture5slImg}
@@ -167,10 +167,11 @@ export default function HeroSection() {
                 w={{ base: "10%", md: "30%" }}
                 display="flex"
                 position={"absolute"}
-                left={"70%"}
+                left={{ base: "73%", md: "25%" }}
+                top={{ base: "5%", md: "8%" }}
                 alignItems="center"
                 justifyContent="center" // Corrected to apply flexbox centering
-                height="100%" // Ensure it fills the parent height for vertical alignment
+                // height="100%" // Ensure it fills the parent height for vertical alignment
               >
                 <Image
                   src={jeweImg}
@@ -185,7 +186,9 @@ export default function HeroSection() {
           {/* 222222222222222 */}
           {
             <Flex
-              height={{ base: "70%", md: "100%" }}
+              // height={{ base: "70%", md: "100vh" }}
+              h={{ base: "70vh", md: "80vh", lg: "100vh" }}
+              overflow={"hidden"}
               w={{ base: "100%", md: "50%" }}
               bg={"#F5F5F5"}
               display={{ base: "none", md: "none", lg: "flex" }}
@@ -231,7 +234,6 @@ export default function HeroSection() {
               </Box>
               <Box
                 width={{ base: "80%", md: "30%" }}
-                height="100%"
                 display="flex"
                 alignItems="end"
                 marginLeft={{ base: "0", md: "-30px" }}
@@ -239,7 +241,7 @@ export default function HeroSection() {
                 <Box>
                   <Image
                     src={texture6Img}
-                    style={{ height: "80%", width: { base: "70%", md: "80%" } }}
+                    style={{ width: { base: "70%", md: "80%" } }}
                     alt="img"
                   />
                 </Box>
