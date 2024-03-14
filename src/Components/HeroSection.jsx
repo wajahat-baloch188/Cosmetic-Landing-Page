@@ -112,7 +112,7 @@ export default function HeroSection() {
                     fontFamily={"Times new Roman"}
                     fontStyle={"italic"}
                     fontWeight={400}
-                    fontSize={"50px"}
+                    fontSize={{ base: "12vw", md: "50px" }}
                     lineHeight={"64.39px"}
                     color={"#323232"}
                   >
@@ -122,7 +122,7 @@ export default function HeroSection() {
                     py={{ base: 1, md: 5 }}
                     fontFamily={"Poppins"}
                     fontWeight={300}
-                    fontSize={"16px"}
+                    fontSize={{ base: "5vw", md: "16px" }}
                     textTransform={"uppercase"}
                     lineHeight={"30px"}
                     color={"#383838"}
@@ -135,7 +135,7 @@ export default function HeroSection() {
                     border={"2px solid #252525"}
                     fontWeight={300}
                     fontFamily={"Poppins"}
-                    fontSize={"14px"}
+                    fontSize={{ base: "4vw", md: "14px" }}
                     borderRadius={"none"}
                     lineHeight={"30px"}
                     _hover={{ bg: "transparent", color: "black" }}
@@ -147,36 +147,34 @@ export default function HeroSection() {
             </Box>
 
             {/* box-1-3 */}
-            <Flex h={{ base: "40%", md: "44%" }} w="100%" flexDirection="row">
+            <Box
+              h={{ base: "45%", md: "44%" }}
+              w="100%"
+              position="relative" // Added relative positioning to the parent box
+            >
               {/* Left box with responsive image positioning */}
               <Box
-                h={"100%"}
+                pos="absolute" // Positioned absolutely
+                bottom={0} // Positioned at the bottom
                 w={{ base: "50%", md: "50%", lg: "50%" }}
-                position={"relative"}
               >
-                <Box
-                  pos={"absolute"}
-                  bottom={0}
-                  border={"1px solid black"}
-                  w={"100%"}
-                  h={"60%"} // Adjusted height to show the texture image at the bottom
-                >
-                  <Image
-                    src={textureImg}
-                    alt="Texture Image"
-                    width="100%"
-                    objectFit="cover"
-                  />
-                </Box>
+                <Image
+                  src={textureImg}
+                  alt="Texture Image"
+                  width="100%"
+                  objectFit="cover"
+                />
               </Box>
 
               {/* Right box with centered image */}
               <Box
-                w={{ base: "50%", md: "50%" }}
+                pos="absolute" // Positioned absolutely
+                bottom={"50%"} // Positioned at the bottom
+                right={0} // Positioned at the right
                 display="flex"
                 alignItems="center"
                 justifyContent="center"
-                position={"relative"}
+                w={{ base: "50%", md: "50%" }}
               >
                 <Image
                   src={jeweImg}
@@ -186,7 +184,7 @@ export default function HeroSection() {
                   style={{ width: "40px" }}
                 />
               </Box>
-            </Flex>
+            </Box>
           </Box>
 
           {/* 222222222222222 */}
