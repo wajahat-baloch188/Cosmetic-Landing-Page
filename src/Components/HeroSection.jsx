@@ -155,7 +155,7 @@ export default function HeroSection() {
               {/* Left box with responsive image positioning */}
               <Box
                 pos="absolute" // Positioned absolutely
-                bottom={{ base: -7, md: -20, lg: -8, xl: -10, "2xl": -14 }} // Positioned at the bottom
+                bottom={{ base: -7, md: -20, lg: -8, xl: -5, "2xl": -7 }} // Positioned at the bottom
                 w={{ base: "50%", md: "50%", lg: "50%" }}
               >
                 <Image
