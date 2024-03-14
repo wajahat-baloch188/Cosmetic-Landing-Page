@@ -61,11 +61,11 @@ export default function HeroSection() {
                 <Image src={jeweImg} alt="img" />
               </Box>
               <Box
-                w={"42%"}
+                // w={"42%"}
                 h={"100%"}
                 display={"flex"}
                 justifyContent={"flex-end"}
-                width={{ base: "40vw", md: "18vw", lg: "100%" }}
+                width={{ base: "40vw", md: "100%", lg: "100%" }}
               >
                 <Image
                   src={texture5slImg}
@@ -155,7 +155,7 @@ export default function HeroSection() {
               {/* Left box with responsive image positioning */}
               <Box
                 pos="absolute" // Positioned absolutely
-                bottom={{ base: -7, md: -8, lg: -10, xl: -15, "2xl": -30 }} // Positioned at the bottom
+                bottom={{ base: -7, md: -14, lg: -15, xl: -17, "2xl": -30 }} // Positioned at the bottom
                 w={{ base: "50%", md: "50%", lg: "50%" }}
               >
                 <Image
