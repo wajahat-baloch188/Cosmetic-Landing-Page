@@ -539,7 +539,7 @@ export default function Home() {
           </Box>
 
           <Box
-            h={{ base: "40vh", md: "90vh", lg: "100vh" }}
+            h={{ base: "40vh", md: "70vh", lg: "90vh", xl: "100vh" }}
             mt={{ base: "20%", md: "-5%" }}
             w={{ base: "100%", md: "35%" }}
             ml={{ base: "30%", md: 0 }}
