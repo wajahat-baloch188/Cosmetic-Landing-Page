@@ -151,7 +151,7 @@ const Shop = () => {
         flexDirection={{ md: "row", base: "column" }}
         justifyContent="space-between"
         alignItems="start"
-        maxW="1528px"
+        w="1528px"
         px={{ md: "0px", base: "20px" }}
         gap="40px"
       >

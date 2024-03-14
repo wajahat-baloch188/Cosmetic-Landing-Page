@@ -268,7 +268,7 @@ export default function Home() {
             <Image
               src={aboutwing}
               alt="About Wing"
-              maxW="100%"
+              w="100%"
               height="auto"
               objectFit="cover"
             />

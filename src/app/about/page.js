@@ -65,7 +65,7 @@ const About = () => {
         flexDirection={"column"}
         gap={{ base: "15", md: "20" }}
         bg={"#F5F5F5"}
-        maxWidth={"100%"}
+        w={"100%"}
         maxHeight={"100%"}
       >
         <Box
