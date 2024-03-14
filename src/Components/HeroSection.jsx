@@ -25,7 +25,7 @@ export default function HeroSection() {
       >
         <Box
           px={{ base: 0, md: 5 }}
-          // h={{ base: "100vh", md: "100vh" }}
+          h={{ base: "70vh", md: "80vh", lg: "100vh" }}
           w={"full"}
           display={"flex"}
         >
