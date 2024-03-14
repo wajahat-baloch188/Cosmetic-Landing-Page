@@ -64,7 +64,7 @@ export default function HeroSection() {
                 h={"100%"}
                 display={"flex"}
                 justifyContent={"flex-end"}
-                width={{ base: "40vw", md: "16vw" }}
+                width={{ base: "40vw", md: "18vw", lg: "17vw" }}
               >
                 <Image
                   src={texture5slImg}
@@ -146,18 +146,20 @@ export default function HeroSection() {
             </Box>
 
             {/* box-1-3 */}
-            <Flex h={{ base: "50%", md: "40%" }} w="100%" position={"relative"}>
+            <Flex h={{ base: "50%", md: "44%" }} w="100%">
               {/* Left box with responsive image positioning */}
               <Box
-                w={{ base: "70%", md: "45%" }}
-                position="absolute"
-                bottom={{ base: -2, md: 0 }}
+                h={"100%"}
+                w={{ base: "70%", md: "45%", lg: "47%" }}
+                position={"relative"}
               >
-                <Image
-                  src={textureImg}
-                  alt="Texture Image"
-                  width={{ base: "30vw", md: "20vw" }} // More responsive width
-                />
+                <Box pos={"absolute"} bottom={0}>
+                  <Image
+                    src={textureImg}
+                    alt="Texture Image"
+                    width={{ base: "30vw", md: "20vw" }} // More responsive width
+                  />
+                </Box>
               </Box>
 
               {/* Right box with centered image */}
