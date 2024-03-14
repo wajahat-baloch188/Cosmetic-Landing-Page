@@ -32,7 +32,7 @@ export default function HeroSection() {
         >
           {/* Box-1 */}
           <Box
-            h={{ base: "70vh", md: "100%" }}
+            h={{ base: "70vh", md: "95%", lg: "100%" }}
             w={{ base: "100%", md: "100%", lg: "50%" }}
             bg={"#F5F5F5"}
           >
@@ -87,7 +87,7 @@ export default function HeroSection() {
               >
                 <Text
                   className={DancingScript.className}
-                  fontSize={{ base: "35vw", md: "19vw" }}
+                  fontSize={{ base: "35vw", md: "20vw", md: "19vw" }}
                   mt={{ base: 15, md: 18 }}
                   style={{
                     color: "#EBEBEB",
@@ -155,7 +155,7 @@ export default function HeroSection() {
               {/* Left box with responsive image positioning */}
               <Box
                 pos="absolute" // Positioned absolutely
-                bottom={{ base: 0, md: -8, lg: -18 }} // Positioned at the bottom
+                bottom={{ base: 0, md: -4, lg: -10 }} // Positioned at the bottom
                 w={{ base: "50%", md: "50%", lg: "50%" }}
               >
                 <Image
