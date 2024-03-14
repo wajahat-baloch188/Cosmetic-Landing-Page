@@ -150,7 +150,7 @@ export default function HeroSection() {
               {/* Left box with responsive image positioning */}
               <Box
                 h={"100%"}
-                w={{ base: "70%", md: "45%", lg: "47%" }}
+                w={{ base: "70%", md: "100%", lg: "100%" }}
                 position={"relative"}
               >
                 <Box pos={"absolute"} bottom={0}>
