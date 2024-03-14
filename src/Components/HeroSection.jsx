@@ -153,7 +153,7 @@ export default function HeroSection() {
                 w={{ base: "70%", md: "100%", lg: "100%" }}
                 position={"relative"}
               >
-                <Box pos={"absolute"} bottom={0}>
+                <Box pos={"absolute"} bottom={0} h={"100%"}>
                   <Image
                     src={textureImg}
                     alt="Texture Image"
