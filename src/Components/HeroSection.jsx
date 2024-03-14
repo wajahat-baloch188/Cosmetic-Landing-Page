@@ -18,20 +18,20 @@ export default function HeroSection() {
   return (
     <Box>
       <Box
-        h={{ base: "70vh", md: "90vh" }}
+        h={{ base: "70vh", mg: "80vh", lg: "90vh" }}
         w="100%"
         bg={"#F5F5F5"}
         overflow={"hidden"}
       >
         <Box
           px={{ base: 0, md: 5 }}
-          h={{ base: "100vh", md: "100vh" }}
+          h={{ base: "70vh", md: "80vh", lg: "100vh" }}
           w={"full"}
           display={"flex"}
         >
           {/* Box-1 */}
           <Box
-            h={{ base: "70vh", md: "90%" }}
+            h={{ base: "70vh", md: "100%" }}
             w={{ base: "100%", md: "100%", lg: "50%" }}
             bg={"#F5F5F5"}
           >
@@ -64,7 +64,7 @@ export default function HeroSection() {
                 h={"100%"}
                 display={"flex"}
                 justifyContent={"flex-end"}
-                width={{ base: "40vw", md: "16vw" }}
+                width={{ base: "40vw", md: "18vw", lg: "17vw" }}
               >
                 <Image
                   src={texture5slImg}
@@ -146,18 +146,20 @@ export default function HeroSection() {
             </Box>
 
             {/* box-1-3 */}
-            <Flex h={{ base: "50%", md: "40%" }} w="100%" position={"relative"}>
+            <Flex h={{ base: "50%", md: "44%" }} w="100%">
               {/* Left box with responsive image positioning */}
               <Box
-                w={{ base: "70%", md: "45%" }}
-                position="absolute"
-                bottom={{ base: -2, md: 0 }}
+                h={"100%"}
+                w={{ base: "70%", md: "45%", lg: "47%" }}
+                position={"relative"}
               >
-                <Image
-                  src={textureImg}
-                  alt="Texture Image"
-                  width={{ base: "30vw", md: "20vw" }} // More responsive width
-                />
+                <Box pos={"absolute"} bottom={0}>
+                  <Image
+                    src={textureImg}
+                    alt="Texture Image"
+                    width={{ base: "30vw", md: "20vw" }} // More responsive width
+                  />
+                </Box>
               </Box>
 
               {/* Right box with centered image */}
@@ -183,7 +185,7 @@ export default function HeroSection() {
           {/* 222222222222222 */}
           {
             <Flex
-              height={{ base: "70%", md: "90%" }}
+              height={{ base: "70%", md: "100%" }}
               w={{ base: "100%", md: "50%" }}
               bg={"#F5F5F5"}
               display={{ base: "none", md: "none", lg: "flex" }}
@@ -249,47 +251,3 @@ export default function HeroSection() {
     </Box>
   );
 }
-
-// ----------------
-{
-  /* Box-2 */
-}
-
-// ===============================
-//  <Flex
-//             border={"1px solid black"}
-//             height={"90%"}
-//             w={{ base: "100%", md: "100%", lg: "50%" }}
-//           >
-//             <Box border={"1px solid red"} w={{ lg: "60%" }}>
-//               <Box
-//                 border={"1px solid red"}
-//                 w={"100%"}
-//                 height={"35%"}
-//                 pos={"relative"}
-//               >
-//                 <Box pos={"absolute"} bottom={-20} right={0}>
-//                   <Image
-//                     src={pattern8Img}
-//                     alt="img"
-//                     style={{ height: "90%", w: "80%" }}
-//                   />
-//                 </Box>
-//               </Box>
-//               <Box
-//                 border={"1px solid red"}
-//                 w={"100%"}
-//                 height={"75%"}
-//                 pos={"relative"}
-//               >
-//                 <Box pos={"absolute"} bottom={12}>
-//                   <Image src={girlImg} alt="img" objectFit="cover" zIndex={1} />
-//                 </Box>
-//               </Box>
-//             </Box>
-//             <Box border={"1px solid green"} w={{ lg: "30%" }} pos={"relative"}>
-//               <Box pos={"absolute"} bottom={0} left={-8} zIndex={0}>
-//                 <Image src={texture6Img} alt="img" />
-//               </Box>
-//             </Box>
-//           </Flex>
