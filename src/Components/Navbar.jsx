@@ -93,7 +93,7 @@ const Navbar = () => {
                 key={link.href}
                 href={link.href}
                 mr={4}
-                fontSize="15px"
+                fontSize={{ md: "12px", lg: "15px" }}
                 position="relative" // Added to position the pseudo-element correctly
                 _after={{
                   content: '""', // Necessary for pseudo-elements

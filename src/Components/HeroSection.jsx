@@ -180,43 +180,70 @@ export default function HeroSection() {
             </Flex>
           </Box>
 
-          <Flex
-            border={"1px solid black"}
-            height={"90%"}
-            w={{ base: "100%", md: "100%", lg: "50%" }}
-          >
-            <Box border={"1px solid red"} w={{ lg: "60%" }}>
+          {/* 222222222222222 */}
+          {
+            <Flex
+              height={{ base: "70%", md: "90%" }}
+              w={{ base: "100%", md: "50%" }}
+              bg={"#F5F5F5"}
+              display={{ base: "none", md: "none", lg: "flex" }}
+            >
               <Box
-                border={"1px solid red"}
-                w={"100%"}
-                height={"35%"}
-                pos={"relative"}
+                width={{ base: "100%", md: "70%" }}
+                height={"100%"}
+                bg={"#F5F5F5"}
               >
-                <Box pos={"absolute"} bottom={-20} right={0}>
+                <Flex direction="column" h="100%">
+                  <Box width="100%" height="25%" pos={"relative"}>
+                    <Box pos={"absolute"} top={36} right={0}>
+                      <Image
+                        zIndex={-1}
+                        src={pattern8Img}
+                        alt="img"
+                        style={{ height: "148px", width: "242px" }}
+                        w={{ base: "600px", md: "242px" }}
+                      />
+                    </Box>
+                  </Box>
+                  <Box
+                    width={{ base: "100%", md: "100%" }}
+                    height={{ base: "50%", md: "75%" }}
+                    objectFit="cover"
+                    display={{ base: "none", md: "block" }}
+                    zIndex={99}
+                    pos={"relative"}
+                  >
+                    <Box pos={"absolute"} bottom={0}>
+                      <Image
+                        src={girlImg}
+                        zIndex={999}
+                        alt="img"
+                        style={{
+                          height: { base: "100%", sm: "50%", md: "100%" },
+                          width: { base: "100%", md: "100%" },
+                        }}
+                      />
+                    </Box>
+                  </Box>
+                </Flex>
+              </Box>
+              <Box
+                width={{ base: "80%", md: "30%" }}
+                height="100%"
+                display="flex"
+                alignItems="end"
+                marginLeft={{ base: "0", md: "-30px" }}
+              >
+                <Box>
                   <Image
-                    src={pattern8Img}
+                    src={texture6Img}
+                    style={{ height: "80%", width: { base: "70%", md: "80%" } }}
                     alt="img"
-                    style={{ height: "90%", w: "80%" }}
                   />
                 </Box>
               </Box>
-              <Box
-                border={"1px solid red"}
-                w={"100%"}
-                height={"75%"}
-                pos={"relative"}
-              >
-                <Box pos={"absolute"} bottom={12}>
-                  <Image src={girlImg} alt="img" objectFit="cover" zIndex={1} />
-                </Box>
-              </Box>
-            </Box>
-            <Box border={"1px solid green"} w={{ lg: "30%" }} pos={"relative"}>
-              <Box pos={"absolute"} bottom={0} left={-8} zIndex={0}>
-                <Image src={texture6Img} alt="img" />
-              </Box>
-            </Box>
-          </Flex>
+            </Flex>
+          }
         </Box>
       </Box>
     </Box>
@@ -227,62 +254,42 @@ export default function HeroSection() {
 {
   /* Box-2 */
 }
-{
-  /* <Flex
-            height={{ base: "70%", md: "90%" }}
-            w={{ base: "100%", md: "50%" }}
-            bg={"#F5F5F5"}
-            display={{ base: "none", md: "none", lg: "flex" }}
-          >
-            <Box
-              width={{ base: "100%", md: "70%" }}
-              height={"100%"}
-              bg={"#F5F5F5"}
-            >
-              <Flex direction="column" h="100%">
-                <Box width="100%" height="25%" padding="75px 0 0 155px">
-                  <Image
-                    zIndex={-1}
-                    src={pattern8Img}
-                    alt="img"
-                    style={{ height: "148px", width: "242px" }}
-                    w={{ base: "600px", md: "242px" }}
-                  />
-                </Box>
-                <Box
-                  width={{ base: "100%", md: "100%" }}
-                  height={{ base: "50%", md: "75%" }}
-                  objectFit="cover"
-                  display={{ base: "none", md: "block" }}
-                  zIndex={99}
-                  border={"1px solid black"}
-                >
-                  <Image
-                    src={girlImg}
-                    zIndex={999}
-                    alt="img"
-                    style={{
-                      height: { base: "100%", sm: "50%", md: "100%" },
-                      width: { base: "100%", md: "100%" },
-                    }}
-                  />
-                </Box>
-              </Flex>
-            </Box>
-            <Box
-              width={{ base: "80%", md: "30%" }}
-              height="100%"
-              display="flex"
-              alignItems="end"
-              marginLeft={{ base: "0", md: "-30px" }}
-            >
-              <Box>
-                <Image
-                  src={texture6Img}
-                  style={{ height: "80%", width: { base: "70%", md: "80%" } }}
-                  alt="img"
-                />
-              </Box>
-            </Box>
-          </Flex> */
-}
+
+// ===============================
+//  <Flex
+//             border={"1px solid black"}
+//             height={"90%"}
+//             w={{ base: "100%", md: "100%", lg: "50%" }}
+//           >
+//             <Box border={"1px solid red"} w={{ lg: "60%" }}>
+//               <Box
+//                 border={"1px solid red"}
+//                 w={"100%"}
+//                 height={"35%"}
+//                 pos={"relative"}
+//               >
+//                 <Box pos={"absolute"} bottom={-20} right={0}>
+//                   <Image
+//                     src={pattern8Img}
+//                     alt="img"
+//                     style={{ height: "90%", w: "80%" }}
+//                   />
+//                 </Box>
+//               </Box>
+//               <Box
+//                 border={"1px solid red"}
+//                 w={"100%"}
+//                 height={"75%"}
+//                 pos={"relative"}
+//               >
+//                 <Box pos={"absolute"} bottom={12}>
+//                   <Image src={girlImg} alt="img" objectFit="cover" zIndex={1} />
+//                 </Box>
+//               </Box>
+//             </Box>
+//             <Box border={"1px solid green"} w={{ lg: "30%" }} pos={"relative"}>
+//               <Box pos={"absolute"} bottom={0} left={-8} zIndex={0}>
+//                 <Image src={texture6Img} alt="img" />
+//               </Box>
+//             </Box>
+//           </Flex>
