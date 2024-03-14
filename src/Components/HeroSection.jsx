@@ -19,7 +19,7 @@ export default function HeroSection() {
   return (
     <Box>
       <Box
-        h={{ base: "70vh", mg: "80vh", lg: "90vh" }}
+        h={{ base: "80vh", mg: "80vh", lg: "90vh" }}
         w="100%"
         bg={"#F5F5F5"}
         overflow={"hidden"}
@@ -147,38 +147,43 @@ export default function HeroSection() {
             </Box>
 
             {/* box-1-3 */}
-            <Flex h={{ base: "50%", md: "44%" }} w="100%">
+            <Flex h={{ base: "40%", md: "44%" }} w="100%" flexDirection="row">
               {/* Left box with responsive image positioning */}
               <Box
                 h={"100%"}
-                w={{ base: "70%", md: "100%", lg: "100%" }}
+                w={{ base: "50%", md: "50%", lg: "50%" }}
                 position={"relative"}
               >
-                <Box pos={"absolute"} bottom={0} h={"100%"}>
+                <Box
+                  pos={"absolute"}
+                  bottom={0}
+                  border={"1px solid black"}
+                  w={"100%"}
+                  h={"60%"} // Adjusted height to show the texture image at the bottom
+                >
                   <Image
                     src={textureImg}
                     alt="Texture Image"
-                    width={{ base: "30vw", md: "20vw" }} // More responsive width
+                    width="100%"
+                    objectFit="cover"
                   />
                 </Box>
               </Box>
 
               {/* Right box with centered image */}
               <Box
-                w={{ base: "10%", md: "30%" }}
+                w={{ base: "50%", md: "50%" }}
                 display="flex"
-                position={"absolute"}
-                left={{ base: "73%", md: "25%" }}
-                top={{ base: "5%", md: "8%" }}
                 alignItems="center"
-                justifyContent="center" // Corrected to apply flexbox centering
-                // height="100%" // Ensure it fills the parent height for vertical alignment
+                justifyContent="center"
+                position={"relative"}
               >
                 <Image
                   src={jeweImg}
-                  alt="Jewe Image"
-                  maxW={{ base: "50%", md: "20%" }} // Responsive max width
-                  m="auto" // Margin auto for auto-adjustment
+                  alt="Jewel Image"
+                  maxW={{ base: "20%", md: "30%" }}
+                  m="auto"
+                  style={{ width: "40px" }}
                 />
               </Box>
             </Flex>
