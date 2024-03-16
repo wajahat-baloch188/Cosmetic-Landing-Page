@@ -1,16 +1,16 @@
-import React from 'react'
-import { Box, Heading, Text } from  "@chakra-ui/react"
-import Image from "next/image"
+import React from "react";
+import { Box, Heading, Text } from "@chakra-ui/react";
+import Image from "next/image";
 
-
-const TestimonialCard = ({image, text ,heading}) => {
-    console.log(image,"hello")
+const TestimonialCard = ({ image, text, heading }) => {
+  console.log(image, "hello");
   return (
     <Box
       display="flex"
       flexDirection="column"
       h="45vh"
-      w={{ base: "100%", md: "40vh" }}
+      w={{ base: "80%", md: "40vh" }}
+      boxShadow={"md"}
     >
       <Box
         h="70%" // Use a percentage for responsive height
@@ -19,8 +19,8 @@ const TestimonialCard = ({image, text ,heading}) => {
         overflow="hidden"
         // Ensure image scales properly
         position="relative"
-        display={'flex'}
-        justifyContent={'center'}
+        display={"flex"}
+        justifyContent={"center"}
       >
         <Image
           src={image}
@@ -36,19 +36,18 @@ const TestimonialCard = ({image, text ,heading}) => {
         gap="1"
         p={{ base: "2", md: "4" }} // Responsive padding
       >
-        <Heading 
-        fontSize={{base:"smaller",md:"x-small"}} 
-        textAlign="center">
+        <Heading
+          fontSize={{ base: "smaller", md: "x-small" }}
+          textAlign="center"
+        >
           {heading}
         </Heading>
-        <Text 
-        fontSize={{base:"xx-small",md:"smaller"}}
-        textAlign="center">
+        <Text fontSize={{ base: "xx-small", md: "smaller" }} textAlign="center">
           {text}
         </Text>
       </Box>
     </Box>
-  )
-}
+  );
+};
 
-export default TestimonialCard
+export default TestimonialCard;
