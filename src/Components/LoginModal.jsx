@@ -33,7 +33,7 @@ function LoginModal({ customIsOpen, customOnOpen, customOnClose }) {
       <ModalOverlay />
       <ModalContent
         m={"4"}
-        h={{ base: "60vh", md: "80vh" }}
+        h={{ base: "65vh", md: "80vh" }}
         position={"relative"}
       >
         <ModalCloseButton zIndex={"10"} />

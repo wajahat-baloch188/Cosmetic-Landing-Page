@@ -1,6 +1,7 @@
 "use client";
 import { Box, Text, Button, Flex, flexbox } from "@chakra-ui/react";
 import Image from "next/image";
+import styles from "../myStyles.module.css";
 
 import jeweImg from "../../public/images/home-img/Jewe2.png";
 import textureImg from "../../public/images/home-img/texture-3.png";
@@ -9,10 +10,11 @@ import girlImg from "../../public/images/home-img/persionsliderhome4.png";
 import pattern8Img from "../../public/images/home-img/partten-8.png";
 import texture6Img from "../../public/images/home-img/texture-6.png";
 
-import { Dancing_Script } from "next/font/google";
-const DancingScript = Dancing_Script({
-  subsets: ["latin"],
-  fontWeight: "900",
+import { extendTheme } from "@chakra-ui/react";
+const customTheme = extendTheme({
+  breakpoints: {
+    xxxl: "2048px", // Custom breakpoint for 2048px
+  },
 });
 
 export default function HeroSection() {
@@ -86,7 +88,7 @@ export default function HeroSection() {
                 }}
               >
                 <Text
-                  className={DancingScript.className}
+                  className={styles.heading}
                   fontSize={{ base: "35vw", md: "20vw", md: "19vw" }}
                   mt={{ base: 15, md: 18 }}
                   style={{
@@ -151,11 +153,18 @@ export default function HeroSection() {
               h={{ base: "45%", md: "44%" }}
               w="100%"
               position="relative" // Added relative positioning to the parent box
+              sx={{
+                "@media screen and (min-width: 2048px) and (min-height: 2732px)":
+                  {
+                    height: "15vh",
+                    border: "1px solid black",
+                  },
+              }}
             >
               {/* Left box with responsive image positioning */}
               <Box
                 pos="absolute" // Positioned absolutely
-                bottom={{ base: -10, md: -40, lg: -8, xl: -14, "2xl": "-24%" }} // Positioned at the bottom
+                bottom={{ base: -10, md: -40, lg: -8, xl: -14, "2xl": "-23%" }} // Positioned at the bottom
                 w={{ base: "50%", md: "50%", lg: "50%" }}
               >
                 <Image
@@ -196,6 +205,14 @@ export default function HeroSection() {
               w={{ base: "100%", md: "50%" }}
               bg={"#F5F5F5"}
               display={{ base: "none", md: "none", lg: "flex" }}
+              sx={{
+                "@media screen and (min-width: 2048px) and (min-height: 2732px)":
+                  {
+                    height: "50vh",
+                    border: "1px solid black",
+                    width: "50%",
+                  },
+              }}
             >
               <Box
                 width={{ base: "100%", md: "70%" }}
@@ -222,7 +239,18 @@ export default function HeroSection() {
                     zIndex={99}
                     pos={"relative"}
                   >
-                    <Box pos={"absolute"} bottom={0}>
+                    <Box
+                      pos={"absolute"}
+                      bottom={0}
+                      sx={{
+                        "@media screen and (min-width: 2048px) and (min-height: 2732px)":
+                          {
+                            height: "27vh",
+                            border: "1px solid black",
+                            bottom: "-25%",
+                          },
+                      }}
+                    >
                       <Image
                         src={girlImg}
                         zIndex={999}
@@ -230,6 +258,13 @@ export default function HeroSection() {
                         style={{
                           height: { base: "100%", sm: "50%", md: "100%" },
                           width: { base: "100%", md: "100%" },
+                        }}
+                        sx={{
+                          "@media screen and (min-width: 48em)": {
+                            height: "27vh",
+                            border: "1px solid black",
+                            marginTop: "-95%",
+                          },
                         }}
                       />
                     </Box>

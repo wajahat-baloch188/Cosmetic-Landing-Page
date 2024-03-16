@@ -3,15 +3,10 @@ import { Box, Flex, Text, Heading } from "@chakra-ui/react";
 
 import partten8 from "../../public/images/home-img/partten-8.png";
 import surfacePinkImg from "../../public/images/home-img/surface-pink.png";
-import { Dancing_Script } from "next/font/google";
+import styles from "../myStyles.module.css";
 import Image from "next/image";
 import HomeFootSlider from "./HomeFootSlider";
 import message from "../../public/images/home-img/message.png";
-
-const DancingScript = Dancing_Script({
-  subsets: ["latin"],
-  fontWeight: "900",
-});
 
 const Testimonials = () => {
   return (
@@ -31,7 +26,7 @@ const Testimonials = () => {
             flexDirection={"column"}
           >
             <Text
-              className={DancingScript.className}
+              className={styles.heading}
               color={"#BFBFBF"}
               textAlign={"center"}
               fontSize={{ base: "6vw", md: "2vw" }}
@@ -54,7 +49,7 @@ const Testimonials = () => {
         {/* Box 2 */}
         <Box width={"100%"} h={"20%"}>
           <Text
-            className={DancingScript.className}
+            className={styles.heading}
             color={"#C75D68"}
             fontSize={{ base: "18vw", md: "8vw" }}
             ml={{ base: -5, md: -8 }}

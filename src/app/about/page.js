@@ -1,23 +1,12 @@
 "use client";
 import AboutHeroSec from "@/Components/AboutHeroSec";
-import {
-  Container,
-  Flex,
-  VStack,
-  Text,
-  Heading,
-  Box,
-  Square,
-} from "@chakra-ui/react";
+import { Container, Flex, Text, Heading, Box } from "@chakra-ui/react";
 import makupImg from "../../../public/images/about-img/makeup.png";
 import leafImg from "../../../public/images/home-img/partten-8.png";
 import BrowPowderImg from "../../../public/images/home-img/texture-3.png";
 import Image from "next/image";
-import { Dancing_Script } from "next/font/google";
-const DancingScript = Dancing_Script({
-  subsets: ["latin"],
-  fontWeight: "900",
-});
+import styles from "../../myStyles.module.css";
+
 import React from "react";
 import icon1 from "../../../public/images/about-img/icon1.png";
 import icon2 from "../../../public/images/about-img/icon2.png";
@@ -57,10 +46,10 @@ const About = () => {
   ]);
 
   return (
-    <div>
+    <Box>
       <AboutHeroSec heading={"About us"} text={"True Natural - True Organic"} />
 
-      <Container
+      <Box
         display={"flex"}
         flexDirection={"column"}
         gap={{ base: "15", md: "20" }}
@@ -84,7 +73,7 @@ const About = () => {
             px={{ base: "0px", md: "10px" }}
           >
             <Text
-              className={DancingScript.className}
+              className={styles.heading}
               fontSize={{ base: "10px", md: "20px" }}
               w={"full"}
               textAlign={"start"}
@@ -292,7 +281,7 @@ const About = () => {
         >
           <Box>
             <Text
-              className={DancingScript.className}
+              className={styles.heading}
               fontSize={{ base: "10px", md: "20px" }}
               w={"full"}
               textAlign={"center"}
@@ -337,7 +326,7 @@ const About = () => {
         >
           <Box>
             <Text
-              className={DancingScript.className}
+              className={styles.heading}
               fontSize={{ base: "10px", md: "20px" }}
               w={"full"}
               textAlign={"center"}
@@ -364,7 +353,7 @@ const About = () => {
         >
           <Box>
             <Text
-              className={DancingScript.className}
+              className={styles.heading}
               fontSize={{ base: "10px", md: "20px" }}
               w={"full"}
               textAlign={"center"}
@@ -396,8 +385,8 @@ const About = () => {
 
         {/* <FooterSLider/> */}
         <FooterSlider />
-      </Container>
-    </div>
+      </Box>
+    </Box>
   );
 };
 

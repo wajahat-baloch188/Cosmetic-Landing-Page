@@ -2,13 +2,8 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
 
 import glitz from "../../public/images/home-img/glitz.png";
-import { Dancing_Script } from "next/font/google";
 import Image from "next/image";
-
-const DancingScript = Dancing_Script({
-  subsets: ["latin"],
-  fontWeight: "900",
-});
+import styles from "../myStyles.module.css";
 
 const BestProduct = () => {
   return (
@@ -31,7 +26,7 @@ const BestProduct = () => {
             <Text
               fontSize={{ base: "32px", md: "32px" }}
               color={"#BFBFBF"}
-              className={DancingScript.className}
+              className={styles.heading}
             >
               Best Product
             </Text>
@@ -81,7 +76,7 @@ const BestProduct = () => {
             <Text
               fontSize={{ base: "17vw", md: "10vw" }}
               color="#C75D68"
-              className={DancingScript.className}
+              className={styles.heading}
               mt={{ base: 10, md: 20 }}
               ml={{ base: 10, md: 60 }}
             >

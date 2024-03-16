@@ -1,13 +1,8 @@
 "use client";
 import React, { useState } from "react";
-// Import necessary components and icons from Chakra UI
-import { Dancing_Script } from "next/font/google";
 import { FaShoppingBag } from "react-icons/fa";
 
-const DancingScript = Dancing_Script({
-  subsets: ["latin"],
-  fontWeight: "900", // Change number for desired thickness
-});
+import styles from "../myStyles.module.css";
 
 import {
   Box,
@@ -73,7 +68,7 @@ const Navbar = () => {
           <Center>
             <Link href="/" _hover={{ textDecoration: "none" }}>
               <Text
-                className={DancingScript.className}
+                className={styles.heading}
                 fontWeight={900}
                 fontSize={{ base: "4vw", md: "20px" }}
               >
@@ -159,7 +154,7 @@ const Navbar = () => {
         <DrawerContent bg={"white"} border={"1px solid black"}>
           <DrawerHeader borderBottomWidth="1px">
             <Flex justifyContent="space-between" alignItems="center">
-              <Text fontWeight="bold" className={DancingScript.className}>
+              <Text fontWeight="bold" className={styles.heading}>
                 {" "}
                 Ethereal Elegance
               </Text>

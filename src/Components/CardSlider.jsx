@@ -20,11 +20,7 @@ import img2 from "../../public/images/home-img/lipstick.png";
 import img3 from "../../public/images/home-img/eyelinear.png";
 import img4 from "../../public/images/home-img/liplose.png";
 
-import { Dancing_Script } from "next/font/google";
-const DancingScript = Dancing_Script({
-  subsets: ["latin"],
-  fontWeight: "900",
-});
+import styles from "../myStyles.module.css";
 
 const products = [
   {
@@ -92,7 +88,7 @@ const CardSlider = () => {
           mt={5}
         >
           <Text
-            className={DancingScript.className}
+            className={styles.heading}
             fontSize={{ base: "16px", md: "32px" }}
             color={"#BFBFBF"}
           >

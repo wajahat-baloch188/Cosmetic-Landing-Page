@@ -1,14 +1,9 @@
 "use client";
 import { Box, Button, Card, Text } from "@chakra-ui/react";
-import { Dancing_Script } from "next/font/google";
 
 import blogImg from "../../public/images/home-img/blogImg1.png";
 
-const DancingScript = Dancing_Script({
-  subsets: ["latin"],
-  fontWeight: "900",
-});
-
+import styles from "../myStyles.module.css";
 import Image from "next/image";
 
 const BeautyBlogs = () => {
@@ -49,7 +44,7 @@ const BeautyBlogs = () => {
             // Assuming you have the font applied globally
             fontSize={{ base: "8vw", md: "5vw" }} // Adjusted font size for smaller screens
             color="#BFBFBF"
-            fontFamily="'Dancing Script', cursive" // Make sure the font name matches your import
+            className={styles.heading}
           >
             Beauty Blog
           </Text>

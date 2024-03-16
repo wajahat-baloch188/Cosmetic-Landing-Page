@@ -6,15 +6,10 @@ import ContactUsComp from "@/Components/ContactUsComp";
 import LogosSection from "@/Components/LogosSection";
 import EmailUs from "@/Components/EmailUs";
 import texture3 from "../../../public/images/home-img/texture-3.png";
-import { Dancing_Script } from "next/font/google";
 import Image from "next/image";
 import OurGallery from "@/Components/OurGallery";
 import FooterSlider from "@/Components/FooterSlider";
 
-const DancingScript = Dancing_Script({
-  subsets: ["latin"],
-  fontWeight: "900",
-});
 const ContactUs = () => {
   return (
     <Box h={"auto"} w={"100%"}>

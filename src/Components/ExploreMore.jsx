@@ -4,18 +4,15 @@ import { Box, Button, Flex, Text } from "@chakra-ui/react";
 import texture3 from "../../public/images/home-img/texture-3.png";
 import Image from "next/image";
 
-import { Dancing_Script } from "next/font/google";
-const DancingScript = Dancing_Script({
-  subsets: ["latin"],
-  fontWeight: "900",
-});
+import styles from "../myStyles.module.css";
+
 const ExploreMore = () => {
   return (
     <Flex height={{ base: "20vh", md: "30vh" }} w={"100%"} bg={"#F8F8F8"}>
       <Box h={"100%"} w={"30%"} pos={"relative"}>
         <Box pos={"absolute"} bottom={{ base: 0, md: -7 }}>
           <Text
-            className={DancingScript.className}
+            className={styles.heading}
             fontSize={{ base: "10vw", md: "10vw" }}
             color={"#C75D68"}
           >

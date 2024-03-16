@@ -1,13 +1,8 @@
 import React from "react";
 import { Box, Text } from "@chakra-ui/react";
 import texture3 from "../../public/images/home-img/texture-3.png";
-import { Dancing_Script } from "next/font/google";
+import styles from "../myStyles.module.css";
 import Image from "next/image";
-
-const DancingScript = Dancing_Script({
-  subsets: ["latin"],
-  fontWeight: "900",
-});
 
 const OurGallery = () => {
   return (
@@ -34,7 +29,7 @@ const OurGallery = () => {
         pr={{ base: 2, md: 3 }}
       >
         <Text
-          className={DancingScript.className}
+          className={styles.heading}
           fontSize={{ base: "2xl", md: "4xl" }}
           color={"#BFBFBF"}
         >

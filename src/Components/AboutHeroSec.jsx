@@ -6,11 +6,7 @@ import texture5slImg from "../../public/images/home-img/texture-5sl.png";
 import texture_2 from "../../public/images/home-img/texture-6.png";
 import lipistic_img from "../../public/images/about-img/lipistic.png";
 
-import { Dancing_Script } from "next/font/google";
-const DancingScript = Dancing_Script({
-  subsets: ["latin"],
-  fontWeight: "900",
-});
+import styles from "../myStyles.module.css";
 
 const AboutHeroSec = ({ heading, text }) => {
   return (
@@ -93,8 +89,9 @@ const AboutHeroSec = ({ heading, text }) => {
                 }}
               >
                 <Text
-                  className={DancingScript.className}
+                  className={styles.heading}
                   fontSize={{ base: "35vw", md: "19vw" }}
+                  zIndex={1}
                   mt={{ base: 15, md: 18 }}
                   style={{
                     color: "#EBEBEB",
@@ -114,6 +111,7 @@ const AboutHeroSec = ({ heading, text }) => {
                   h="100%" // Adjust height to fill remaining space
                   w="100%"
                   position="relative" // Make inner box relative for layering
+                  zIndex={2}
                 >
                   <Text
                     fontFamily={"Times new Roman"}
