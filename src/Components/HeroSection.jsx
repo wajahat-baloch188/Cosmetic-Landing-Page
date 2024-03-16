@@ -67,7 +67,7 @@ export default function HeroSection() {
                 h={"100%"}
                 display={"flex"}
                 justifyContent={"flex-end"}
-                width={{ base: "40vw", md: "100%", lg: "100%" }}
+                width={{ base: "40vw", md: "100%", lg: "95%" }}
               >
                 <Image
                   src={texture5slImg}
@@ -191,69 +191,89 @@ export default function HeroSection() {
 
           {/* 222222222222222 */}
           {
-            <Flex
-              // height={{ base: "70%", md: "100vh" }}
-              h={{ base: "70vh", md: "80vh", lg: "100vh" }}
-              overflow={"hidden"}
-              w={{ base: "100%", md: "50%" }}
-              bg={"#F5F5F5"}
-              display={{ base: "none", md: "none", lg: "flex" }}
-            >
-              <Box
-                width={{ base: "100%", md: "70%" }}
-                height={"100%"}
-                bg={"#F5F5F5"}
-              >
-                <Flex direction="column" h="100%">
-                  <Box width="100%" height="25%" pos={"relative"}>
-                    <Box pos={"absolute"} top={36} right={0}>
-                      <Image
-                        zIndex={-1}
-                        src={pattern8Img}
-                        alt="img"
-                        style={{ height: "148px", width: "242px" }}
-                        w={{ base: "600px", md: "242px" }}
-                      />
-                    </Box>
-                  </Box>
-                  <Box
-                    width={{ base: "100%", md: "100%" }}
-                    height={{ base: "50%", md: "75%" }}
-                    objectFit="cover"
-                    display={{ base: "none", md: "block" }}
-                    zIndex={99}
-                    pos={"relative"}
-                  >
-                    <Box pos={"absolute"} bottom={0}>
-                      <Image
-                        src={girlImg}
-                        zIndex={999}
-                        alt="img"
-                        style={{
-                          height: { base: "100%", sm: "50%", md: "100%" },
-                          width: { base: "100%", md: "100%" },
-                        }}
-                      />
-                    </Box>
-                  </Box>
-                </Flex>
-              </Box>
-              <Box
-                width={{ base: "80%", md: "30%" }}
-                display="flex"
-                alignItems="end"
-                marginLeft={{ base: "0", md: "-30px" }}
-              >
-                <Box>
-                  <Image
-                    src={texture6Img}
-                    style={{ width: { base: "70%", md: "80%" } }}
-                    alt="img"
-                  />
-                </Box>
-              </Box>
-            </Flex>
+            // <Flex
+            //   // height={{ base: "70%", md: "100vh" }}
+            //   h={{ base: "70vh", md: "80vh", lg: "100vh" }}
+            //   overflow={"hidden"}
+            //   w={{ base: "100%", md: "50%" }}
+            //   bg={"#F5F5F5"}
+            //   display={{ base: "none", md: "none", lg: "flex" }}
+            // >
+            //   <Box
+            //     width={{ base: "100%", md: "70%" }}
+            //     height={"100%"}
+            //     bg={"#F5F5F5"}
+            //   >
+            //     <Flex direction="column" h="100%">
+            //       <Box width="100%" height="25%" pos={"relative"}>
+            //         <Box pos={"absolute"} top={36} right={0}>
+            //           <Image
+            //             zIndex={-1}
+            //             src={pattern8Img}
+            //             alt="img"
+            //             style={{ height: "148px", width: "242px" }}
+            //             w={{ base: "600px", md: "242px" }}
+            //           />
+            //         </Box>
+            //       </Box>
+            //       <Box
+            //         width={{ base: "100%", md: "100%" }}
+            //         height={{ base: "50%", md: "75%" }}
+            //         objectFit="cover"
+            //         display={{ base: "none", md: "block" }}
+            //         zIndex={99}
+            //         pos={"relative"}
+            //       >
+            //         <Box pos={"absolute"} bottom={0}>
+            //           <Image
+            //             src={girlImg}
+            //             zIndex={999}
+            //             alt="img"
+            //             style={{
+            //               height: { base: "100%", sm: "50%", md: "100%" },
+            //               width: { base: "100%", md: "100%" },
+            //             }}
+            //           />
+            //         </Box>
+            //       </Box>
+            //     </Flex>
+            //   </Box>
+            //   <Box
+            //     width={{ base: "80%", md: "30%" }}
+            //     display="flex"
+            //     alignItems="end"
+            //     marginLeft={{ base: "0", md: "-30px" }}
+            //   >
+            //     <Box>
+            //       <Image
+            //         src={texture6Img}
+            //         style={{ width: { base: "70%", md: "80%" } }}
+            //         alt="img"
+            //       />
+            //     </Box>
+            //   </Box>
+            // </Flex>
           }
+          <Box
+            h={{ base: "70vh", md: "95%", lg: "100%" }}
+            w={{ base: "100%", md: "100%", lg: "50%" }}
+            bg={"#F5F5F5"}
+            display={{ base: "none", md: "none", lg: "flex" }}
+          >
+            <Box h={"100%"} w={"70%"} pos={"relative"}>
+              <Box pos={"absolute"} right={0} bottom={"33vh"}>
+                <Image src={pattern8Img} style={{ width: "23vw" }} />
+              </Box>
+              <Box pos={"absolute"} bottom={0}>
+                <Image src={girlImg} />
+              </Box>
+            </Box>
+            <Box h={"100%"} w={"30%"} pos={"relative"}>
+              <Box pos={"absolute"} bottom={0} left={0}>
+                <Image src={texture6Img} />
+              </Box>
+            </Box>
+          </Box>
         </Box>
       </Box>
     </Box>

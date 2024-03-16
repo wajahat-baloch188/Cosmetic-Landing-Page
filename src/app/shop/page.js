@@ -98,7 +98,7 @@ const Shop = () => {
         justifyContent="space-between"
         alignItems="center"
         maxW="1528px"
-        px={{ md: "0px", base: "20px" }}
+        px={{ md: "20px", base: "20px" }}
         gap="40px"
       >
         <Flex
@@ -145,7 +145,7 @@ const Shop = () => {
         justifyContent="space-between"
         alignItems="start"
         maxW="1528px"
-        px={{ md: "0px", base: "20px" }}
+        px={{ md: "20px", base: "20px" }}
         gap="40px"
       >
         <Flex
