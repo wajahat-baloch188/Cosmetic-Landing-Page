@@ -7,9 +7,10 @@ const TestimonialCard = ({ image, text, heading }) => {
   return (
     <Box
       display="flex"
+      justifyContent={"space-around"}
       flexDirection="column"
       h="45vh"
-      w={{ base: "80%", md: "40vh" }}
+      w={{ base: "80%", md: "240px" }}
       boxShadow={"md"}
     >
       <Box

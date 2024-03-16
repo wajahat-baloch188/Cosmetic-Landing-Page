@@ -266,13 +266,13 @@ export default function Home() {
 
       {/* About us */}
       <Box
-        height={{ base: "auto", md: "92vh", lg: "100vh" }}
+        height={{ base: "auto", md: "75vh", lg: "100vh" }}
         width="100%"
         display="flex"
         flexWrap="wrap"
       >
         {/* Box 1 */}
-        <Box
+        {/* <Box
           mt={{ base: 10, md: 0 }}
           height={{ base: "80vh", md: "88vh", lg: "100vh" }}
           width={{ base: "100%", md: "50%" }}
@@ -282,7 +282,7 @@ export default function Home() {
           alignItems="center"
           flexDirection="column"
         >
-          {/* Child 1 of Box 1 */}
+          
           <Box
             height="35%"
             width={{ base: "30%", md: "25%" }}
@@ -301,7 +301,7 @@ export default function Home() {
             />
           </Box>
 
-          {/* Child 3 of Box 1 */}
+          
           <Box
             position="absolute"
             top="50%"
@@ -314,7 +314,7 @@ export default function Home() {
             </Button>
           </Box>
 
-          {/* Child 2 of Box 1 */}
+          
           <Box
             height={{ base: "55%", md: "64%" }}
             width="57%"
@@ -322,7 +322,7 @@ export default function Home() {
             zIndex="2"
           ></Box>
 
-          {/* Child 4 of Box 1 */}
+          
           <Box
             height={{ base: "55%", md: "65%" }}
             width="57%"
@@ -337,6 +337,63 @@ export default function Home() {
               objectFit="cover"
               style={{ height: "100%" }}
             />
+          </Box>
+        </Box> */}
+
+        <Box
+          mt={{ base: 10, md: 0 }}
+          height={{ base: "80vh", md: "88vh", lg: "100vh" }}
+          width={{ base: "100%", md: "45%" }} // Adjusted width for responsiveness
+          position="relative"
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+          flexDirection="column"
+          p={{ base: 4, md: 6 }} // Adjusted padding for responsiveness
+        >
+          <Box
+            border={"1px solid black"}
+            height={{ base: "50vh", md: "40vh", lg: "70vh" }} // Adjusted height for responsiveness
+            width={{ base: "80%", md: "60%" }}
+            pos={"absolute"}
+            zIndex={3}
+          ></Box>
+          <Box
+            pos={"absolute"}
+            height={{ base: "50vh", md: "40vh", lg: "70vh" }} // Adjusted height for responsiveness
+            width={{ base: "80%", md: "60%" }}
+            top={{ base: "21%", md: "29%", lg: "17%" }}
+            left={{ base: "13%", md: "23%", lg: "22%" }}
+            zIndex={-3}
+          >
+            <Image src={aboutImg} style={{ height: "100%", width: "100%" }} />
+          </Box>
+          <Box
+            pos={"absolute"}
+            height={{ base: "30vh", md: "32vh", lg: "40vh" }} // Adjusted height for responsiveness
+            width={{ base: "40%", md: "45%", lg: "35%" }} // Adjusted width for responsiveness
+            top={{ base: "8%", md: "19%", lg: "8%" }} // Adjusted top position for responsiveness
+            left={{ base: "0%", md: "10%", lg: "12%" }} // Adjusted left position for responsiveness
+            zIndex={99}
+          >
+            <Image src={aboutwing} style={{ height: "100%", width: "100%" }} />
+          </Box>
+          <Box
+            position="absolute"
+            top="50%"
+            left="50%"
+            zIndex={99}
+            transform="translateX(-50%)"
+          >
+            <Button
+              zIndex={5}
+              borderRadius={0}
+              fontSize={{ base: "3vw", md: "1.5vw" }}
+              py={{ base: 4, md: 8 }}
+              px={{ base: 6, md: 10 }}
+            >
+              Fancy Look
+            </Button>
           </Box>
         </Box>
 

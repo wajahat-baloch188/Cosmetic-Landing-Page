@@ -261,7 +261,7 @@ export default function HeroSection() {
             display={{ base: "none", md: "none", lg: "flex" }}
           >
             <Box h={"100%"} w={"70%"} pos={"relative"}>
-              <Box pos={"absolute"} right={0} bottom={"33vh"}>
+              <Box pos={"absolute"} right={0} bottom={"34vh"}>
                 <Image src={pattern8Img} style={{ width: "23vw" }} />
               </Box>
               <Box pos={"absolute"} bottom={0}>
