@@ -45,7 +45,7 @@ const FooterSlider = () => {
       let newSettings = { ...settings };
 
       if (windowWidth < 400) {
-        newSettings.slidesToShow = 1;
+        newSettings.slidesToShow = 2;
         newSettings.slidesToScroll = 1;
       } else {
         newSettings.slidesToShow = 8;
