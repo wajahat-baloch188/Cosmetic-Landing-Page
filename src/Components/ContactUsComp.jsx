@@ -3,11 +3,7 @@ import { Box, Flex, Text } from "@chakra-ui/react";
 import jeweImg from "../../public/images/home-img/Jewe2.png";
 import Image from "next/image";
 
-import { Dancing_Script } from "next/font/google";
-const DancingScript = Dancing_Script({
-  subsets: ["latin"],
-  fontWeight: "900",
-});
+import styles from "../myStyles.module.css";
 const ContactUsComp = () => {
   const contactInfo = [
     {
@@ -68,7 +64,7 @@ const ContactUsComp = () => {
               color="#BFBFBF"
               fontSize={{ base: "20px", md: "25px", lg: "30px" }}
               textAlign={"center"}
-              className={DancingScript.className}
+              className={styles.heading}
             >
               Contact us
             </Text>
@@ -142,7 +138,7 @@ const ContactUsComp = () => {
       >
         <Text
           color="#BFBFBF"
-          className={DancingScript.className}
+          className={styles.heading}
           fontSize={{ base: "5vw", md: "3vw" }}
           mt={{ base: 1, md: 0 }}
         >

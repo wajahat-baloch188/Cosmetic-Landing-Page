@@ -2,13 +2,7 @@
 import AboutHeroSec from "@/Components/AboutHeroSec";
 import { CiHeart } from "react-icons/ci";
 
-import { Dancing_Script } from "next/font/google";
 import FooterSlider from "@/Components/FooterSlider";
-
-const DancingScript = Dancing_Script({
-  subsets: ["latin"],
-  fontWeight: "900",
-});
 
 import { CiShare2 } from "react-icons/ci";
 import {
@@ -27,6 +21,7 @@ import img2 from "../../../../public/images/home-img/blogGrid2.png";
 import { React, useState } from "react";
 import Description from "@/Components/Description";
 import CardSlider from "@/Components/CardSlider";
+import styles from "../../../myStyles.module.css";
 
 const ProductDetails = () => {
   const availableProducts = 56;
@@ -364,7 +359,7 @@ const ProductDetails = () => {
           pr={{ base: 2, md: 3 }}
         >
           <Text
-            className={DancingScript.className}
+            className={styles.heading}
             fontSize={{ base: "2xl", md: "4xl" }}
             color={"#BFBFBF"}
           >

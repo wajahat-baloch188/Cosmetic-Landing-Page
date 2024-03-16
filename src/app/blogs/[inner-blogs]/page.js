@@ -12,7 +12,7 @@ import {
   Divider,
 } from "@chakra-ui/react";
 import React from "react";
-import { Dancing_Script } from "next/font/google";
+import styles from "../../../myStyles.module.css";
 import Image from "next/image";
 
 import RecentBlogsCard from "@/Components/RecentBlogsCard";
@@ -23,12 +23,6 @@ import RightImg from "../../../../public/images/inner-banner/rightMain.png";
 import leftImg from "../../../../public/images/inner-banner/leftMain.png";
 import sale from "../../../../public/images/inner-banner/sale.png";
 import FooterSlider from "@/Components/FooterSlider";
-// import mainImg from '../../../public/images/innerbanner/main.png'
-// import texture3 from "../../../public/images/home-img/texture-3.png"
-const DancingScript = Dancing_Script({
-  subsets: ["latin"],
-  fontWeight: "900",
-});
 
 const InnerBlogs = () => {
   const arr = [
@@ -85,7 +79,7 @@ const InnerBlogs = () => {
               p={"5px"}
             >
               <Text
-                className={DancingScript.className}
+                className={styles.heading}
                 fontSize={{ base: "10px", md: "20px" }}
                 w={"full"}
                 textAlign={"start"}
@@ -118,7 +112,7 @@ const InnerBlogs = () => {
                 the world of beauty.
               </Text>
               <Text
-                className={DancingScript.className}
+                className={styles.heading}
                 fontSize={{ base: "10px", md: "40px" }}
                 w={"full"}
                 textAlign={"start"}
@@ -278,7 +272,7 @@ const InnerBlogs = () => {
           >
             <Box>
               <Text
-                className={DancingScript.className}
+                className={styles.heading}
                 fontSize={{ base: "12px", md: "24px" }}
                 w={"full"}
                 textAlign={"start"}
@@ -375,7 +369,7 @@ const InnerBlogs = () => {
         <Box h={"100%"} w={"30%"} pos={"relative"}>
           <Box pos={"absolute"} bottom={{ base: 0, md: -7 }}>
             <Text
-              className={DancingScript.className}
+              className={styles.heading}
               fontSize={{ base: "10vw", md: "10vw" }}
               color={"#C75D68"}
             >

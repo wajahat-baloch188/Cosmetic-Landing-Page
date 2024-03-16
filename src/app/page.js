@@ -1,6 +1,8 @@
 "use client";
 import { Box, Button, Flex, Text } from "@chakra-ui/react";
 
+import styles from "../myStyles.module.css";
+
 import HeroSection from "@/Components/HeroSection";
 import Rectangle1Img from "../../public/images/home-img/Rectangle1.png";
 import lipstick from "../../public/images/home-img/lipstick.png";
@@ -10,6 +12,9 @@ import nailPolish from "../../public/images/home-img/nailpolish.png";
 import aboutImg from "../../public/images/home-img/about-img.png";
 import aboutwing from "../../public/images/home-img/aboutwing.png";
 import clinque from "../../public/images/home-img/clinque.png";
+import card2 from "../../public/images/products-img/card2.png";
+import card4 from "../../public/images/products-img/Card4.png";
+import card5 from "../../public/images/products-img/card5.png";
 import partten8 from "../../public/images/home-img/partten-8.png";
 import white_syrup from "../../public/images/home-img/whitening_syrup.png";
 import Image from "next/image";
@@ -20,34 +25,28 @@ import Testimonials from "@/Components/Testimonials";
 import BeautyBlogs from "@/Components/BeautyBlogs";
 import BestProduct from "@/Components/BestProduct";
 
-import { Dancing_Script } from "next/font/google";
 import ExploreMore from "@/Components/ExploreMore";
-import HomeFootSlider from "@/Components/HomeFootSlider";
-const DancingScript = Dancing_Script({
-  subsets: ["latin"],
-  fontWeight: "900",
-});
 
 const cardsData = [
   {
     text1: "Must Have",
     text2: "Makeup Set",
-    // img:
+    img: Rectangle1Img,
   },
   {
     text1: "Nature",
     text2: "Foundation",
-    // img:
+    img: card2,
   },
   {
     text1: "Must Have",
     text2: "Body Cleaner",
-    // img:
+    img: card4,
   },
   {
     text1: "Must Have",
     text2: "Perfumes",
-    // img:
+    img: card5,
   },
 ];
 
@@ -88,58 +87,86 @@ export default function Home() {
       <Flex
         height={{ base: "auto", md: "30vh" }}
         width="100%"
-        gap={2}
+        gap={3}
         flexWrap={{ base: "wrap", md: "nowrap" }}
-        p={5}
-        justifyContent="space-between"
+        py={5}
+        px={{ base: 8, md: 10 }}
+        justifyContent="space-around"
         alignItems="center"
       >
         {cardsData.map((data, i) => {
           return (
             <Box
-              key={i}
+              key={data.id}
               pos={"relative"}
-              h={{ base: "125px", md: "160px" }} // Adjust height responsively
-              w={{ base: "100%", sm: "48%", md: "300px" }} // Adjust width responsively
+              h={{ base: "125px", md: "160px", lg: "170px", "2xl": "190px" }}
+              w={{
+                base: "100%",
+                sm: "40%",
+                md: "43%",
+                lg: "32%",
+                "2xl": "21.5%",
+              }}
               boxShadow={"md"}
+              display="flex"
+              flexWrap="wrap"
+              justifyContent="center" // Center the box horizontally and vertically
+              alignItems="center"
+              zIndex={99}
             >
-              <Box h={"100%"} w={"100%"} pos={"absolute"} zIndex={-6}>
-                <Image
-                  src={Rectangle1Img}
-                  objectFit="cover"
-                  style={{ height: "100%", width: "100%" }}
-                  alt="img"
-                />
-              </Box>
+              <Image
+                src={data.img}
+                objectFit="cover"
+                alt="img"
+                style={{ height: "100%", width: "100%" }}
+              />
+
               <Box
-                h={"50%"}
-                w={"50%"}
-                position={"absolute"}
-                right={0}
-                bottom={0}
-                display={"flex"}
-                justifyContent={"center"}
-                alignItems={"center"}
-                flexDir={"column"}
-                zIndex={9}
+                h={"100%"}
+                w={"100%"}
+                pos={"absolute"}
+                top={0}
+                left={0}
+                display={"flex"} // Wrap content if needed
+                flexWrap="wrap" // Allow content to wrap on smaller screens
+                justifyContent={"center"} // Align text content to the right (optional)
+                alignItems={"center"} // Align text content to the bottom (optional)
+                flexDir={"column"} // Stack text content vertically
+                zIndex={1} // Ensure text overlays the image
+                p={0} // Remove padding for better border box placement
               >
-                <Text
-                  fontSize={{ base: "md", md: "lg", lg: "xl" }}
-                  textColor="#DBAFAF"
-                  className={DancingScript.className}
-                  fontWeight={"900"}
+                <Box
+                  border={"1px solid black"} // Black border box
+                  w={"95%"} // Adjust width as needed
+                  h={"90%"} // Adjust height as needed
+                  display={"flex"}
+                  flexDir={"column"}
+                  justifyContent={"end"}
+                  alignItems={"end"}
+                  p={2}
                 >
-                  {data.text1}
-                </Text>
-                {/* Adjust font size responsively for "Makeup" text */}
-                <Text
-                  fontSize={{ base: "md", md: "lg", lg: "xl" }}
-                  textColor="#383838"
-                  fontFamily="Poppins"
-                  fontWeight={"light"}
-                >
-                  {data.text2}
-                </Text>
+                  {/* Text content with original positioning */}
+                  <Text
+                    fontSize={{ base: "md", md: "lg", lg: "xl" }}
+                    textColor="#DBAFAF"
+                    className={styles.heading}
+                    fontWeight={"900"}
+                    pr={4}
+                    textAlign={"center"} // Center text horizontally
+                  >
+                    {data.text1}
+                  </Text>
+                  <Text
+                    fontSize={{ base: "sm", md: "14px", lg: "md" }}
+                    textColor="#383838"
+                    fontFamily="Poppins"
+                    fontWeight={"light"}
+                    bg={"white"} // White background for better readability
+                    px={2} // Padding for text content
+                  >
+                    {data.text2}
+                  </Text>
+                </Box>
               </Box>
             </Box>
           );
@@ -150,7 +177,7 @@ export default function Home() {
       <Box minH={"100vh"} w={"100%"}>
         <Flex w={"100%"} h={"25%"} flexDir={"column"} alignItems={"center"}>
           <Text
-            className={DancingScript.className}
+            className={styles.heading}
             fontSize={"32px"}
             color={"#BFBFBF"}
             mt={5}
@@ -333,7 +360,7 @@ export default function Home() {
             <Text
               fontSize={"32px"}
               color={"#BFBFBF"}
-              className={DancingScript.className}
+              className={styles.heading}
               placeSelf={"start"}
             >
               About us
@@ -483,7 +510,7 @@ export default function Home() {
             </Box>
             <Box h={"45%"} w={"100%"}>
               <Text
-                className={DancingScript.className}
+                className={styles.heading}
                 textColor={"#C75D68"}
                 fontSize={"32px"}
               >
@@ -571,7 +598,13 @@ export default function Home() {
           >
             <Image src={partten8} alt="img" />
           </Box>
-          <Box h={"100%"} w={{ base: "70%", md: "65%" }}>
+          <Box
+            h={"100%"}
+            w={{ base: "70%", md: "65%" }}
+            display={"flex"}
+            justifyContent={"center"}
+            alignItems={"center"}
+          >
             <Image src={white_syrup} alt="syrup" />
           </Box>
         </Box>
@@ -585,7 +618,7 @@ export default function Home() {
           {/* Serum Text (Background) */}
           <Text
             fontSize={{ base: "30vw", md: "13vw" }}
-            className={DancingScript.className}
+            className={styles.heading}
             position="absolute"
             top="50%"
             left={{ base: "55%", md: "60%" }}
@@ -609,7 +642,7 @@ export default function Home() {
             <Text
               fontSize={{ base: "32px", md: "32px" }}
               color="#BFBFBF"
-              className={DancingScript.className}
+              className={styles.heading}
             >
               Best Product
             </Text>
