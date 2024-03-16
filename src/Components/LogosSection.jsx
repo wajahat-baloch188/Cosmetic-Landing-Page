@@ -43,7 +43,7 @@ const LogosSection = () => {
   };
   return (
     <Box
-      h={{ base: "15vh", md: "35vh" }}
+      h={{ base: "15vh", md: "20vh", lg: "35vh" }}
       w="100%"
       position="relative"
       display="flex"
@@ -75,6 +75,7 @@ const LogosSection = () => {
               justifyContent={"center"}
               alignItems={"center"}
               mt={{ base: 2, md: 0 }}
+              pt={{ base: 10, md: 0 }}
             >
               <Image
                 src={logo}
