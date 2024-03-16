@@ -67,7 +67,7 @@ export default function HeroSection() {
                 h={"100%"}
                 display={"flex"}
                 justifyContent={"flex-end"}
-                width={{ base: "40vw", md: "100%", lg: "100%" }}
+                width={{ base: "40vw", md: "100%", lg: "95%" }}
               >
                 <Image
                   src={texture5slImg}
