@@ -272,74 +272,6 @@ export default function Home() {
         flexWrap="wrap"
       >
         {/* Box 1 */}
-        {/* <Box
-          mt={{ base: 10, md: 0 }}
-          height={{ base: "80vh", md: "88vh", lg: "100vh" }}
-          width={{ base: "100%", md: "50%" }}
-          position="relative"
-          display="flex"
-          justifyContent="center"
-          alignItems="center"
-          flexDirection="column"
-        >
-          
-          <Box
-            height="35%"
-            width={{ base: "30%", md: "25%" }}
-            position="absolute"
-            top={{ base: "15%", md: "10%" }}
-            left={{ base: "28%", md: "26%" }}
-            transform="translateX(-50%)"
-            zIndex="0"
-          >
-            <Image
-              src={aboutwing}
-              alt="About Wing"
-              w="100%"
-              height="auto"
-              objectFit="cover"
-            />
-          </Box>
-
-          
-          <Box
-            position="absolute"
-            top="50%"
-            left="50%"
-            zIndex={99}
-            transform="translateX(-50%)"
-          >
-            <Button zIndex={5} borderRadius={0}>
-              Fancy Look
-            </Button>
-          </Box>
-
-          
-          <Box
-            height={{ base: "55%", md: "64%" }}
-            width="57%"
-            border="1px solid #252525"
-            zIndex="2"
-          ></Box>
-
-          
-          <Box
-            height={{ base: "55%", md: "65%" }}
-            width="57%"
-            position="absolute"
-            top={{ base: "24%", md: "20%" }}
-            left={{ base: "23%", md: "23.5%" }}
-            zIndex="1"
-          >
-            <Image
-              src={aboutImg}
-              alt="About Image"
-              objectFit="cover"
-              style={{ height: "100%" }}
-            />
-          </Box>
-        </Box> */}
-
         <Box
           mt={{ base: 10, md: 0 }}
           height={{ base: "80vh", md: "88vh", lg: "100vh" }}
@@ -353,7 +285,7 @@ export default function Home() {
         >
           <Box
             border={"1px solid black"}
-            height={{ base: "50vh", md: "40vh", lg: "70vh" }} // Adjusted height for responsiveness
+            height={{ base: "420px", md: "415px", lg: "630px" }} // Adjusted height for responsiveness
             width={{ base: "80%", md: "60%" }}
             pos={"absolute"}
             zIndex={3}
@@ -362,7 +294,7 @@ export default function Home() {
             pos={"absolute"}
             height={{ base: "50vh", md: "40vh", lg: "70vh" }} // Adjusted height for responsiveness
             width={{ base: "80%", md: "60%" }}
-            top={{ base: "21%", md: "29%", lg: "17%" }}
+            top={{ base: "21%", md: "28.2%", lg: "17%" }}
             left={{ base: "13%", md: "23%", lg: "22%" }}
             zIndex={-3}
           >
@@ -607,7 +539,7 @@ export default function Home() {
                   bg={"transparent"}
                   border={"2px solid black"}
                   borderRadius={0}
-                  mt={{ base: "85%", md: "0" }}
+                  mt={{ base: "85%", md: "-20" }}
                 >
                   READ MORE
                 </Button>
