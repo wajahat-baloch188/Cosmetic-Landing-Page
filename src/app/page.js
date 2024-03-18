@@ -273,56 +273,54 @@ export default function Home() {
       >
         {/* Box 1 */}
         <Box
-          mt={{ base: 10, md: 0 }}
-          height={{ base: "80vh", md: "88vh", lg: "100vh" }}
-          width={{ base: "100%", md: "45%" }} // Adjusted width for responsiveness
+          height={{ base: "70vh", md: "88vh", lg: "100vh" }}
+          width={{ base: "100%", md: "50%" }}
           position="relative"
           display="flex"
           justifyContent="center"
           alignItems="center"
           flexDirection="column"
-          p={{ base: 4, md: 6 }} // Adjusted padding for responsiveness
         >
           <Box
+            height={{ base: "42vh", md: "24vh", lg: "47vh" }}
+            width={{ base: "80%", md: "60%", lg: "50%" }}
             border={"1px solid black"}
-            height={{ base: "420px", md: "415px", lg: "630px" }} // Adjusted height for responsiveness
-            width={{ base: "80%", md: "60%" }}
             pos={"absolute"}
-            zIndex={3}
-          ></Box>
-          <Box
-            pos={"absolute"}
-            height={{ base: "50vh", md: "40vh", lg: "70vh" }} // Adjusted height for responsiveness
-            width={{ base: "80%", md: "60%" }}
-            top={{ base: "21%", md: "28.2%", lg: "17%" }}
-            left={{ base: "13%", md: "23%", lg: "22%" }}
-            zIndex={-3}
+            zIndex={-1}
           >
-            <Image src={aboutImg} style={{ height: "100%", width: "100%" }} />
+            <Box
+              width={{ base: "120px", md: "160px", lg: "270px" }}
+              pos={"absolute"}
+              left={{ base: "-20px", md: "-45px", lg: "-90px" }}
+              top={{ base: -10, md: "-40px", lg: "-90px" }}
+              zIndex={99}
+            >
+              <Image src={aboutwing} />
+            </Box>
           </Box>
           <Box
+            height={{ base: "42vh", md: "24vh", lg: "47vh" }}
+            width={{ base: "80%", md: "60%", lg: "50%" }}
             pos={"absolute"}
-            height={{ base: "30vh", md: "32vh", lg: "40vh" }} // Adjusted height for responsiveness
-            width={{ base: "40%", md: "45%", lg: "35%" }} // Adjusted width for responsiveness
-            top={{ base: "8%", md: "19%", lg: "8%" }} // Adjusted top position for responsiveness
-            left={{ base: "0%", md: "10%", lg: "12%" }} // Adjusted left position for responsiveness
-            zIndex={99}
+            top={{ base: "22%", md: "37%", lg: "28%" }}
+            left={{ base: "13%", md: "22%", lg: "26%" }}
+            zIndex={-9}
           >
-            <Image src={aboutwing} style={{ height: "100%", width: "100%" }} />
+            <Image src={aboutImg} style={{ height: "100%" }} />
           </Box>
+
           <Box
             position="absolute"
             top="50%"
             left="50%"
-            zIndex={99}
-            transform="translateX(-50%)"
+            transform="translate(-50%, -50%)"
           >
             <Button
               zIndex={5}
               borderRadius={0}
-              fontSize={{ base: "3vw", md: "1.5vw" }}
-              py={{ base: 4, md: 8 }}
-              px={{ base: 6, md: 10 }}
+              fontSize={{ base: "2vw", md: "1.5vw" }}
+              py={{ base: 2, md: 3 }}
+              px={{ base: 3, md: 5 }}
             >
               Fancy Look
             </Button>
