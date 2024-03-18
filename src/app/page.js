@@ -285,31 +285,34 @@ export default function Home() {
         >
           <Box
             border={"1px solid black"}
-            height={{ base: "420px", md: "415px", lg: "630px" }} // Adjusted height for responsiveness
+            height={{ base: "460px", md: "450px", lg: "680px" }}
             width={{ base: "80%", md: "60%" }}
             pos={"absolute"}
-            zIndex={3}
-          ></Box>
-          <Box
-            pos={"absolute"}
-            height={{ base: "50vh", md: "40vh", lg: "70vh" }} // Adjusted height for responsiveness
-            width={{ base: "80%", md: "60%" }}
-            top={{ base: "21%", md: "28.2%", lg: "17%" }}
-            left={{ base: "13%", md: "23%", lg: "22%" }}
-            zIndex={-3}
-          >
-            <Image src={aboutImg} style={{ height: "100%", width: "100%" }} />
-          </Box>
-          <Box
-            pos={"absolute"}
-            height={{ base: "30vh", md: "32vh", lg: "40vh" }} // Adjusted height for responsiveness
-            width={{ base: "40%", md: "45%", lg: "35%" }} // Adjusted width for responsiveness
-            top={{ base: "8%", md: "19%", lg: "8%" }} // Adjusted top position for responsiveness
-            left={{ base: "0%", md: "10%", lg: "12%" }} // Adjusted left position for responsiveness
             zIndex={99}
+            pt={3}
+            pl={3}
           >
-            <Image src={aboutwing} style={{ height: "100%", width: "100%" }} />
+            <Box
+              pos={"absolute"}
+              width={{ base: "100%", md: "100%" }}
+              height={{ base: "460px", md: "450px", lg: "680px" }}
+              zIndex={-99}
+            >
+              <Image src={aboutImg} style={{ height: "100%", width: "100%" }} />
+            </Box>
+            <Box
+              width={{ base: "150px", md: "150px", lg: "250px" }}
+              mt={-20}
+              ml={{ base: -10, md: -16, lg: -18, xl: -20 }}
+              zIndex={1}
+            >
+              <Image
+                src={aboutwing}
+                style={{ height: "100%", width: "100%" }}
+              />
+            </Box>
           </Box>
+
           <Box
             position="absolute"
             top="50%"
@@ -321,8 +324,8 @@ export default function Home() {
               zIndex={5}
               borderRadius={0}
               fontSize={{ base: "3vw", md: "1.5vw" }}
-              py={{ base: 4, md: 8 }}
-              px={{ base: 6, md: 10 }}
+              py={{ base: 3, md: 6 }}
+              px={{ base: 5, md: 8 }}
             >
               Fancy Look
             </Button>
