@@ -539,7 +539,7 @@ export default function Home() {
                   bg={"transparent"}
                   border={"2px solid black"}
                   borderRadius={0}
-                  mt={{ base: "85%", md: "-20" }}
+                  mt={{ base: "85%", md: "-15" }}
                 >
                   READ MORE
                 </Button>
