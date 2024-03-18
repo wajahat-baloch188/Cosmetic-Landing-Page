@@ -271,7 +271,7 @@ export default function Home() {
         display="flex"
         flexWrap="wrap"
       >
-        {/* Box 1 */}
+        {/* Box-1 */}
         <Box
           height={{ base: "70vh", md: "88vh", lg: "100vh" }}
           width={{ base: "100%", md: "50%" }}
