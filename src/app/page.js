@@ -282,7 +282,7 @@ export default function Home() {
           flexDirection="column"
         >
           <Box
-            height={{ base: "42vh", md: "24vh", lg: "47vh" }}
+            height={{ base: "45vh", md: "24vh", lg: "47vh" }}
             width={{ base: "80%", md: "60%", lg: "50%" }}
             border={"1px solid black"}
             pos={"absolute"}
@@ -299,10 +299,10 @@ export default function Home() {
             </Box>
           </Box>
           <Box
-            height={{ base: "42vh", md: "24vh", lg: "47vh" }}
+            height={{ base: "45vh", md: "24vh", lg: "47vh" }}
             width={{ base: "80%", md: "60%", lg: "50%" }}
             pos={"absolute"}
-            top={{ base: "22%", md: "37%", lg: "28%" }}
+            top={{ base: "20%", md: "37%", lg: "28%" }}
             left={{ base: "13%", md: "22%", lg: "26%" }}
             zIndex={-9}
           >
